@@ -7,15 +7,58 @@ export default function Contact() {
         email: '',
         message: ''
     });
+    const [errors, setErrors] = useState({});
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
+    const validateForm = () => {
+        const errors = {};
+        
+        if (!formData.firstName) {
+            errors.firstName = "First Name is required";
+        } else if (formData.firstName.length < 2) {
+            errors.firstName = "First Name must be at least 2 characters long";
+        }
+
+        if (!formData.lastName) {
+            errors.lastName = "Last Name is required";
+        } else if (formData.lastName.length < 2) {
+            errors.lastName = "Last Name must be at least 2 characters long";
+        }
+
+        if (!formData.email) {
+            errors.email = "Email is required";
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            errors.email = "Email address is invalid";
+        }
+
+        if (!formData.message) {
+            errors.message = "Message is required";
+        } else if (formData.message.length < 10) {
+            errors.message = "Message must be at least 10 characters long";
+        }
+
+        return errors;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form data submitted:', formData);
+        const validationErrors = validateForm();
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+        } else {
+            console.log('Form data submitted:', formData);
+            setErrors({});
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                message: ''
+            });
+        }
     };
 
     return (
@@ -31,7 +74,6 @@ export default function Contact() {
                         placeholder="Enter your first name"
                         value={formData.firstName}
                         onChange={handleChange}
-                        required
                     />
                 </div>
 
@@ -44,7 +86,6 @@ export default function Contact() {
                         placeholder="Enter your last name"
                         value={formData.lastName}
                         onChange={handleChange}
-                        required
                     />
                 </div>
 
@@ -57,7 +98,6 @@ export default function Contact() {
                         placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleChange}
-                        required
                     />
                 </div>
 
@@ -69,12 +109,19 @@ export default function Contact() {
                         placeholder="Enter your message"
                         value={formData.message}
                         onChange={handleChange}
-                        required
                     ></textarea>
                 </div>
 
                 <div className="form-group">
                     <button type="submit">Submit</button>
+                </div>
+
+          {/* Error display section */}
+          <div className="form-errors">
+                    {errors.firstName && <p>{errors.firstName}</p>}
+                    {errors.lastName && <p>{errors.lastName}</p>}
+                    {errors.email && <p>{errors.email}</p>}
+                    {errors.message && <p>{errors.message}</p>}
                 </div>
             </form>
         </section>
