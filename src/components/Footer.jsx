@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondary text-light py-3">
       <div className="container text-center">
-        {/* Example icons */}
+        {/* Set Icons */}
         <div className="mb-2">
           <a 
             href="https://www.linkedin.com/in/rorydowse" 
