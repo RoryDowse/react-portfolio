@@ -18,7 +18,7 @@ export default function Nav() {
       </Link>,
       <a key={4} className="nav-link text-light" href="/assets/resume.pdf" download>
         Resume
-      </a>
+      </a>,
       ]}
     />
   );

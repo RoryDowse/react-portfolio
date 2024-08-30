@@ -1,5 +1,5 @@
-import Name from './Name.jsx';
-import Nav from './Nav.jsx';
+import Name from './Name';
+import Nav from './Nav';
 
 export default function Header() {
     return (
