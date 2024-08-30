@@ -1,40 +1,50 @@
 import React, { useState } from 'react';
 
+// Define the Contact component
 export default function Contact() {
+    // State to hold form data
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         message: ''
     });
+
+    // State to hold validation errors
     const [errors, setErrors] = useState({});
 
+    // Handle change in form inputs
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
+    // Validate form inputs
     const validateForm = () => {
         const errors = {};
         
+        // Validate first name
         if (!formData.firstName) {
             errors.firstName = "First Name is required";
         } else if (formData.firstName.length < 2) {
             errors.firstName = "First Name must be at least 2 characters long";
         }
 
+        // Validate last name
         if (!formData.lastName) {
             errors.lastName = "Last Name is required";
         } else if (formData.lastName.length < 2) {
             errors.lastName = "Last Name must be at least 2 characters long";
         }
 
+        // Validate email
         if (!formData.email) {
             errors.email = "Email is required";
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             errors.email = "Email address is invalid";
         }
 
+        // Validate message
         if (!formData.message) {
             errors.message = "Message is required";
         } else if (formData.message.length < 10) {
@@ -44,15 +54,22 @@ export default function Contact() {
         return errors;
     };
 
+    // Handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevent default from submission behavior
+
+        // Get validation errors
         const validationErrors = validateForm();
+
+        // Check if there are validation errors
         if (Object.keys(validationErrors).length > 0) {
+            // Set errors sate with validation errors
             setErrors(validationErrors);
         } else {
+            // If no validation errors, process with form submission
             console.log('Form data submitted:', formData);
-            setErrors({});
-            setFormData({
+            setErrors({}); // Reset form state (clear errors)
+            setFormData({ // Reset form data
                 firstName: '',
                 lastName: '',
                 email: '',
@@ -112,11 +129,12 @@ export default function Contact() {
                     ></textarea>
                 </div>
 
+                {/* Submit button */}
                 <div className="form-group">
                     <button type="submit">Submit</button>
                 </div>
 
-          {/* Error display section */}
+          {/* Display validation errors */}
           <div className="form-errors">
                     {errors.firstName && <p>{errors.firstName}</p>}
                     {errors.lastName && <p>{errors.lastName}</p>}
