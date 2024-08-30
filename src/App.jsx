@@ -7,9 +7,9 @@ function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      <Header /> {/* Displays the developer's name and navigation menu */}
+      <Outlet /> {/* Displays the content of the current page */}
+      <Footer /> {/* Displays links to the developer's profiles */}
     </>
   );
 }
