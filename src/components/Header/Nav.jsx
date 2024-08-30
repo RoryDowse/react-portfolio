@@ -16,7 +16,7 @@ export default function Nav() {
         <Link key={3} className="nav-link text-light" to="/contact">
         Contact
       </Link>,
-      <a key={4} className="nav-link text-light" href="/assets/resume.pdf" download>
+      <a key={4} className="nav-link text-light" href="/assets/rory-dowse-resume.pdf" download>
         Resume
       </a>,
       ]}
