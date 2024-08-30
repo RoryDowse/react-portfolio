@@ -1,5 +1,6 @@
 // Bringing in the required import from 'react-router-dom'
-import { Link } from 'react-router-dom';
+// Including functionality to add styles to the active link
+import { NavLink } from 'react-router-dom';
 import Navbar from './Navbar';
 
 export default function Nav() {
@@ -7,16 +8,42 @@ export default function Nav() {
   return (
     <Navbar
       links={[
-        <Link key={1} className="nav-link text-light" to="/">
+        <NavLink 
+        key={1} 
+        className="nav-link" 
+        to="/" 
+        style={({ isActive }) => ({
+          color: isActive ? 'lightBlue' : 'white', // Change color based on active state
+        })}
+        >
           Home
-        </Link>,
-        <Link key={2} className="nav-link text-light" to="/portfolio">
+        </NavLink>,
+        <NavLink 
+        key={2} 
+        className="nav-link" 
+        to="/portfolio"
+        style={({ isActive }) => ({
+          color: isActive ? 'lightBlue' : 'white',
+        })}
+        >
           Portfolio
-        </Link>,
-        <Link key={3} className="nav-link text-light" to="/contact">
+        </NavLink>,
+        <NavLink 
+        key={3} 
+        className="nav-link" 
+        to="/contact"
+        style={({ isActive }) => ({
+          color: isActive ? 'lightBlue' : 'white',
+        })}
+        >
         Contact
-      </Link>,
-      <a key={4} className="nav-link text-light" href="/assets/rory-dowse-resume.pdf" download>
+      </NavLink>,
+      <a 
+      key={4} 
+      className="nav-link" 
+      href="/assets/rory-dowse-resume.pdf" download
+      style={{ color: 'white' }}
+      >
         Resume
       </a>,
       ]}
