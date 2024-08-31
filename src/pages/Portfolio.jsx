@@ -11,23 +11,24 @@ const projects = [
     {
         id: 1,
         image: project1Image,
-        title: 'Project 1',
-        deployedLink: 'https://github.com',
-        githubLink: 'https://github.com',
+        title: 'Car Loan Payment Calculator',
+        deployedLink: 'https://b3hold23.github.io/car-loan-payment/',
+        githubLink: 'https://github.com/b3hold23/car-loan-payment',
     },
     {
         id: 2,
         image: project2Image,
-        title: 'Project 2',
-        deployedLink: 'https://github.com',
-        githubLink: 'https://github.com',
+        title: 'Weather Dashboard',
+        deployedLink: 'https://weather-dashboard-wuv2.onrender.com',
+        githubLink: 'https://github.com/RoryDowse/weather-dashboard',
     },
     {
         id: 3,
         image: project3Image,
-        title: 'Project 3',
-        deployedLink: 'https://github.com',
-        githubLink: 'https://github.com',
+        title: 'James Woodrow Violin',
+        deployedLink: 'https://jameswoodrowviolin.com/',
+        githubLink: 'https://jameswoodrowviolin.com/',
+        // Add code to github and link
     },
     // Add more projects as needed
 ];

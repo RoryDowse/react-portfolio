@@ -9,7 +9,7 @@ export default function Project({ image, title, deployedLink, githubLink }) {
             <div className="project-image">
                 <img src={image} alt={title} />
                 <div className="overlay">
-                    <a href={deployedLink} className="project-title">
+                    <a href={deployedLink} className="project-title" target="_blank" rel="noopener noreferrer">
                         {title}
                     </a>
                     <a href={githubLink} className="github-link" target="_blank" rel="noopener noreferrer">
