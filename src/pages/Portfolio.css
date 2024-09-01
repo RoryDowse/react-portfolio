@@ -17,7 +17,7 @@
 /* Grid container for project items */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -96,4 +96,18 @@
 /* Ensure images and texts inside the overlay are properly centered */
 .overlay a {
   margin: 0.5rem;
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 }
