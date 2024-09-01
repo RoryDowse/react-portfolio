@@ -12,8 +12,8 @@ const projects = [
         id: 1,
         image: project1Image,
         title: 'Car Loan Payment Calculator',
-        deployedLink: 'https://b3hold23.github.io/car-loan-payment/',
-        githubLink: 'https://github.com/b3hold23/car-loan-payment',
+        deployedLink: 'https://rorydowse.github.io/car-loan-payment/',
+        githubLink: 'https://github.com/RoryDowse/car-loan-payment',
     },
     {
         id: 2,
