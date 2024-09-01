@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Contact.css';
 
 // Define the Contact component
 export default function Contact() {
@@ -91,6 +92,7 @@ export default function Contact() {
                         placeholder="Enter your first name"
                         value={formData.firstName}
                         onChange={handleChange}
+                        className="form-control"
                     />
                 </div>
 
@@ -103,6 +105,7 @@ export default function Contact() {
                         placeholder="Enter your last name"
                         value={formData.lastName}
                         onChange={handleChange}
+                        className="form-control"
                     />
                 </div>
 
@@ -115,6 +118,7 @@ export default function Contact() {
                         placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleChange}
+                        className="form-control"
                     />
                 </div>
 
@@ -126,12 +130,13 @@ export default function Contact() {
                         placeholder="Enter your message"
                         value={formData.message}
                         onChange={handleChange}
+                        className="form-control"
                     ></textarea>
                 </div>
 
                 {/* Submit button */}
                 <div className="form-group">
-                    <button type="submit">Submit</button>
+                    <button type="submit" className="btn btn-primary">Submit</button>
                 </div>
 
           {/* Display validation errors */}
