@@ -27,7 +27,7 @@ const projects = [
         image: project3Image,
         title: 'James Woodrow Violin',
         deployedLink: 'https://jameswoodrowviolin.com/',
-        githubLink: 'https://jameswoodrowviolin.com/',
+        githubLink: 'https://github.com/RoryDowse/james-woodrow-violin',
         // Add code to github and link
     },
     // Add more projects as needed
