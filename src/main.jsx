@@ -11,7 +11,7 @@ import './App.css';
 import App from './App';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([

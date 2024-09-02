@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import validateForm from './ValidateContactForm.jsx';
 import './Contact.css';
 
 // Define the Contact component
@@ -20,47 +21,12 @@ export default function Contact() {
         setFormData({ ...formData, [name]: value });
     };
 
-    // Validate form inputs
-    const validateForm = () => {
-        const errors = {};
-        
-        // Validate first name
-        if (!formData.firstName) {
-            errors.firstName = "First Name is required";
-        } else if (formData.firstName.length < 2) {
-            errors.firstName = "First Name must be at least 2 characters long";
-        }
-
-        // Validate last name
-        if (!formData.lastName) {
-            errors.lastName = "Last Name is required";
-        } else if (formData.lastName.length < 2) {
-            errors.lastName = "Last Name must be at least 2 characters long";
-        }
-
-        // Validate email
-        if (!formData.email) {
-            errors.email = "Email is required";
-        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            errors.email = "Email address is invalid";
-        }
-
-        // Validate message
-        if (!formData.message) {
-            errors.message = "Message is required";
-        } else if (formData.message.length < 10) {
-            errors.message = "Message must be at least 10 characters long";
-        }
-
-        return errors;
-    };
-
     // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent default from submission behavior
 
         // Get validation errors
-        const validationErrors = validateForm();
+        const validationErrors = validateForm(formData);
 
         // Check if there are validation errors
         if (Object.keys(validationErrors).length > 0) {
