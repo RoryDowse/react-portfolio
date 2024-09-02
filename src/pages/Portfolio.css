@@ -3,7 +3,7 @@
 /* Container for the entire portfolio section */
 .portfolio-section {
   padding: 2rem;
-  background-color: #f8f9fa;
+  background-color: var(--background-color);
 }
 
 /* Title of the portfolio section */
@@ -76,7 +76,7 @@
 
 /* Hover effect for project title */
 .project-title:hover {
-  color: #ffcc00;
+  color: var(--accent-color);
   text-decoration: underline;
 }
 

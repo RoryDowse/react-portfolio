@@ -1,10 +1,12 @@
+import './Navbar.css';
+
 export default function Nav({ links }) {
     return (
-      <nav className="navbar navbar-expand-lg bg-secondary">
+      <nav className="navbar navbar-expand-lg custom-navbar">
         <div className="container-fluid">
           {/* Toggle button to navbar for mobile devices */}
           <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon custom-navbar-toggler-icon"></span>
           </button>
           {/* Collapsible navbar content */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

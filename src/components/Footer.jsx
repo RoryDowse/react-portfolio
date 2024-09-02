@@ -2,10 +2,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-light py-3">
+    <footer className="custom-footer text-light py-3">
       <div className="container text-center">
         {/* Set Icons */}
         <div className="mb-2">

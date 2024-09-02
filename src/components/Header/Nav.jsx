@@ -13,7 +13,7 @@ export default function Nav() {
         className="nav-link" 
         to="/" 
         style={({ isActive }) => ({
-          color: isActive ? 'lightBlue' : 'white', // Change color based on active state
+          color: isActive ? 'var(--accent-color)' : 'var(--background-color)', // Change color based on active state
         })}
         >
           About Me
@@ -23,7 +23,7 @@ export default function Nav() {
         className="nav-link" 
         to="/portfolio"
         style={({ isActive }) => ({
-          color: isActive ? 'lightBlue' : 'white',
+          color: isActive ? 'var(--accent-color)' : 'var(--background-color)', 
         })}
         >
           Portfolio
@@ -33,7 +33,7 @@ export default function Nav() {
         className="nav-link" 
         to="/contact"
         style={({ isActive }) => ({
-          color: isActive ? 'lightBlue' : 'white',
+          color: isActive ? 'var(--accent-color)' : 'var(--background-color)', 
         })}
         >
         Contact
@@ -43,7 +43,7 @@ export default function Nav() {
         className="nav-link" 
         to="/resume"
         style={({ isActive }) => ({
-          color: isActive ? 'lightBlue' : 'white',
+          color: isActive ? 'var(--accent-color)' : 'var(--background-color)', 
         })}
         >
         Resume

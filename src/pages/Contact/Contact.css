@@ -52,3 +52,13 @@
   color: #dc3545;
   margin: 0.5rem 0;
 }
+
+/* Override Bootstrap's .btn-primary styles */
+.btn-primary {
+  background-color: var(--tertiary-color) !important;
+}
+
+/* Optionally, set the hover and focus states to ensure consistency */
+.btn-primary:hover {
+  background-color: #66bb6a !important;
+}

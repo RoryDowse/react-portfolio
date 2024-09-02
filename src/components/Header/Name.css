@@ -1,0 +1,8 @@
+.name-background {
+  background-color: var(--primary-color);
+}
+
+.subtitle {
+  color: var(--tertiary-color);
+  font-size: 22px;
+}
