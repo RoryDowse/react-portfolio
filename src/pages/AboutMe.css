@@ -5,6 +5,9 @@
 
 .about-me h2 {
   text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
 }
 
 .about-me-content {

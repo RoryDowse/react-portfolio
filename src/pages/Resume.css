@@ -4,6 +4,13 @@
   margin: 0 auto;
 }
 
+.resume h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
 .resume-link {
   display: block;
   margin-bottom: 20px;
@@ -21,8 +28,8 @@
 }
 
 .proficiencies h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .proficiency-type-list {
@@ -32,7 +39,7 @@
 
 .proficiency-title {
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 3.5rem;
 }
 
 .proficiency-list {
