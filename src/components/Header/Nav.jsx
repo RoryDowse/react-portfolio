@@ -16,7 +16,7 @@ export default function Nav() {
           color: isActive ? 'lightBlue' : 'white', // Change color based on active state
         })}
         >
-          Home
+          About Me
         </NavLink>,
         <NavLink 
         key={2} 
