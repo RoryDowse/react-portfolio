@@ -15,6 +15,14 @@ export default function Contact() {
     // State to hold validation errors
     const [errors, setErrors] = useState({});
 
+    // Handle input field blur (when user moves out of the field)
+    const handleBlur = (e) => {
+        console.log(e);
+        const { name, value } = e.target;
+        const newErrors = validateForm({ ...formData, [name]: value });
+        setErrors({ ...errors, [name]: newErrors[name] });
+    };
+
     // Handle change in form inputs
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -23,14 +31,14 @@ export default function Contact() {
 
     // Handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent default from submission behavior
+        e.preventDefault(); // Prevent default form submission behavior
 
         // Get validation errors
         const validationErrors = validateForm(formData);
 
         // Check if there are validation errors
         if (Object.keys(validationErrors).length > 0) {
-            // Set errors sate with validation errors
+            // Set errors state with validation errors
             setErrors(validationErrors);
         } else {
             // If no validation errors, process with form submission
@@ -58,6 +66,7 @@ export default function Contact() {
                         placeholder="Enter your first name"
                         value={formData.firstName}
                         onChange={handleChange}
+                        onBlur={handleBlur}  // Add onBlur for validation
                         className="form-control"
                     />
                 </div>
@@ -71,6 +80,7 @@ export default function Contact() {
                         placeholder="Enter your last name"
                         value={formData.lastName}
                         onChange={handleChange}
+                        onBlur={handleBlur}  // Add onBlur for validation
                         className="form-control"
                     />
                 </div>
@@ -84,6 +94,7 @@ export default function Contact() {
                         placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleChange}
+                        onBlur={handleBlur}  // Add onBlur for validation
                         className="form-control"
                     />
                 </div>
@@ -96,6 +107,7 @@ export default function Contact() {
                         placeholder="Enter your message"
                         value={formData.message}
                         onChange={handleChange}
+                        onBlur={handleBlur}  // Add onBlur for validation
                         className="form-control"
                     ></textarea>
                 </div>
@@ -105,12 +117,12 @@ export default function Contact() {
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </div>
 
-          {/* Display validation errors */}
-          <div className="form-errors">
-                    {errors.firstName && <p>{errors.firstName}</p>}
-                    {errors.lastName && <p>{errors.lastName}</p>}
-                    {errors.email && <p>{errors.email}</p>}
-                    {errors.message && <p>{errors.message}</p>}
+                {/* Display validation errors */}
+                <div className="form-errors">
+                    {errors.firstName && <p className="form-error">{errors.firstName}</p>}
+                    {errors.lastName && <p className="form-error">{errors.lastName}</p>}
+                    {errors.email && <p className="form-error">{errors.email}</p>}
+                    {errors.message && <p className="form-error">{errors.message}</p>}
                 </div>
             </form>
         </section>

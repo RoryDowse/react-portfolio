@@ -38,14 +38,16 @@ export default function Nav() {
         >
         Contact
       </NavLink>,
-      <a 
-      key={4} 
-      className="nav-link" 
-      href="/assets/rory-dowse-resume.pdf" download
-      style={{ color: 'white' }}
-      >
+      <NavLink 
+        key={4} 
+        className="nav-link" 
+        to="/resume"
+        style={({ isActive }) => ({
+          color: isActive ? 'lightBlue' : 'white',
+        })}
+        >
         Resume
-      </a>,
+      </NavLink>,
       ]}
     />
   );
