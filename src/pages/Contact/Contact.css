@@ -1,7 +1,5 @@
 .contact-section {
   padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
   background-color: var(--background-color);
 }
 
@@ -13,6 +11,8 @@
 }
 .contact-form {
   background-color: var(--muted-tertiary-color);
+  max-width: 600px;
+  margin: 0 auto;
   padding: 1.5rem 2rem 0.5rem 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
