@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import validateForm from './ValidateContactForm.jsx';
 import './Contact.css';
 

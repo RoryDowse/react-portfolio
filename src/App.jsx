@@ -1,4 +1,3 @@
-import React from 'react';
 // Bringing in the required import from 'react-router-dom'
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header/Header';
