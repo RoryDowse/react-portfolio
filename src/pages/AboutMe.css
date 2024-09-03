@@ -19,7 +19,12 @@
   margin-bottom: 3rem;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: myAnim 0.5s ease 0s 1 normal forwards;
+  transition: transform 0.3s ease, box-shadow 0.1s ease;
+}
+
+.about-me-photo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-me-bio {
