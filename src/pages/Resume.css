@@ -19,7 +19,7 @@
 .download-section {
   color: var(--background-color);
   padding: 2rem;
-  background-color: var(--tertiary-color);
+  background-color: var(--muted-tertiary-color);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 600px;

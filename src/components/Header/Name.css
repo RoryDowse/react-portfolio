@@ -12,3 +12,11 @@
   justify-content: center;
   width: 100%;
 }
+
+.fs-custom-h1 {
+  font-size: 4rem;
+}
+
+.fs-custom-p {
+  font-size: 1.5rem;
+}
