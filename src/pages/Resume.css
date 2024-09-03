@@ -58,7 +58,7 @@
 }
 
 /* Title of the Developer Proficiencies section */
-.resume h3 {
+.proficiencies-title {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 1.75rem;
@@ -89,7 +89,7 @@
 }
 
 /* Styling for proficiency card headings */
-.proficiency-card h4 {
+.proficiency-card-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }

@@ -26,7 +26,7 @@ export default function Resume() {
                 <h3 className="proficiencies-title">Developer Proficiencies</h3>
                 <div className="proficiency-cards">
                     <div className="proficiency-card">
-                        <h4>Front-End Technologies:</h4>
+                        <h4 className="proficiency-card-title">Front-End Technologies:</h4>
                             <ul className="proficiency-list">
                                 <li>CSS</li>
                                 <li>HTML</li>
