@@ -22,10 +22,13 @@
   background-color: var(--tertiary-color);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
 }
 
 .download-section h3 {
   color: var(--background-color) !important;
+  margin-bottom: 1rem !important;
 }
 
 /* Button to download PDF */

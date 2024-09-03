@@ -10,7 +10,7 @@ export default function Resume() {
                 {/* Link to downloadable resume */}
                 <div className="download-section">
                 <h3>Download</h3>
-                <p>Download my resume:</p>
+                <p>My resume:</p>
                 <a
                     href="../assets/rory-dowse-resume.pdf"
                     download="Rory Dowse Resume.pdf"
