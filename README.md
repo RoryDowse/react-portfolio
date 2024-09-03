@@ -6,6 +6,8 @@
 
 This project was motivated by the need to create a professional online portfolio that showcases my work and skills to potential employers, clients, and collaborators. I aimed to build a comprehensive platform where visitors can learn about me, explore my projects, and easily contact me. The project serves as a practical demonstration of my React.js abilities, allowing me to test and develop my skills in building dynamic, single-page applications.
 
+Deployed link: https://rory-dowse-portfolio.netlify.app/
+
 ## Table of Contents
 
 - [Installation](#installation)
