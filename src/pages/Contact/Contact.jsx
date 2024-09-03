@@ -66,7 +66,8 @@ export default function Contact() {
                         placeholder="Enter your first name"
                         value={formData.firstName}
                         onChange={handleChange}
-                        onBlur={handleBlur}  
+                        onBlur={handleBlur}
+                        onMouseOut={handleBlur}  
                         className="form-control"
                     />
                 </div>
@@ -80,7 +81,8 @@ export default function Contact() {
                         placeholder="Enter your last name"
                         value={formData.lastName}
                         onChange={handleChange}
-                        onBlur={handleBlur}  
+                        onBlur={handleBlur}
+                        onMouseOut={handleBlur} 
                         className="form-control"
                     />
                 </div>
@@ -94,7 +96,8 @@ export default function Contact() {
                         placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleChange}
-                        onBlur={handleBlur}  
+                        onBlur={handleBlur}
+                        onMouseOut={handleBlur}  
                         className="form-control"
                     />
                 </div>
@@ -107,7 +110,8 @@ export default function Contact() {
                         placeholder="Enter your message"
                         value={formData.message}
                         onChange={handleChange}
-                        onBlur={handleBlur}  
+                        onBlur={handleBlur}
+                        onMouseOut={handleBlur} 
                         className="form-control"
                     ></textarea>
                 </div>
