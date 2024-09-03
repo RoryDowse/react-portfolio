@@ -14,6 +14,7 @@
   margin-bottom: 3rem;
   font-size: 2.5rem;
   color: #333;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 
 .download-section {
@@ -24,6 +25,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 600px;
   margin: auto;
+  animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 .download-section h3 {
@@ -49,6 +51,10 @@
 /* Optionally, set the hover and focus states to ensure consistency */
 .btn-primary:hover {
   background-color: #f7f4a8 !important;
+}
+
+.proficiencies {
+  animation: myAnim 0.75s ease 0s 1 normal forwards;
 }
 
 /* Title of the Developer Proficiencies section */
@@ -97,6 +103,18 @@
 .proficiency-list li {
   font-size: 16px;
   margin-bottom: 6px;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Small screens (mobile phones) */

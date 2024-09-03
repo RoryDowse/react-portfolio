@@ -19,10 +19,12 @@
   margin-bottom: 3rem;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 
 .about-me-bio {
   text-align: justify;
+  animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 .about-me-bio h2 {
@@ -30,6 +32,7 @@
   margin-bottom: 1rem;
   font-size: 2.5rem;
   color: #333;
+  animation: myAnim 0.75s ease 0s 1 normal forwards;
 }
 
 .first-letter {
@@ -39,4 +42,16 @@
 .about-me-bio p {
   font-size: 1rem;
   line-height: 2rem;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

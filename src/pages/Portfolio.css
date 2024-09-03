@@ -12,6 +12,7 @@
   margin-bottom: 3rem;
   font-size: 2.5rem;
   color: #333;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 
 /* Grid container for project items */
@@ -19,6 +20,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 2rem;
+  animation: myAnim 0.75s ease 0s 1 normal forwards;
 }
 
 /* Container for individual project cards */
@@ -98,6 +100,18 @@
 /* Ensure images and texts inside the overlay are properly centered */
 .overlay a {
   margin: 0.5rem;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Small screens (mobile phones) */

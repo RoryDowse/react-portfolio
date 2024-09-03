@@ -8,6 +8,7 @@
   margin-bottom: 3rem;
   font-size: 2.5rem;
   color: #333;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 .contact-form {
   background-color: var(--muted-tertiary-color);
@@ -16,6 +17,7 @@
   padding: 1.5rem 2rem 0.5rem 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
+  animation: myAnim 0.75s ease 0s 1 normal forwards;
 }
 
 .contact-form .form-group {
@@ -63,4 +65,16 @@
 .form-errors p {
   color: var(--background-color) !important;
   margin: 0.5rem 0;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
