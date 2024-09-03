@@ -6,13 +6,13 @@
 
 .contact-section h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   color: #333;
 }
 .contact-form {
-  background-color: var(--tertiary-color);
-  padding: 2rem;
+  background-color: var(--muted-tertiary-color);
+  padding: 1.5rem 2rem 0.5rem 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
 }
@@ -22,9 +22,9 @@
 }
 
 .contact-form label {
+  color: var(--background-color);
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: bold;
 }
 
 .contact-form input,
@@ -41,18 +41,11 @@
 }
 
 .contact-form button {
-  background-color: #007bff;
-  color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.form-errors p {
-  color: var(--text-color) !important;
-  margin: 0.5rem 0;
 }
 
 /* Override Bootstrap's .btn-primary styles */
@@ -64,4 +57,9 @@
 /* Optionally, set the hover and focus states to ensure consistency */
 .btn-primary:hover {
   background-color: #f7f4a8 !important;
+}
+
+.form-errors p {
+  color: var(--background-color) !important;
+  margin: 0.5rem 0;
 }

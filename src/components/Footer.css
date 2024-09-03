@@ -1,3 +1,21 @@
 .custom-footer {
   background-color: var(--secondary-color);
 }
+
+.github-link,
+.linkedin-link,
+.email-link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for GitHub icon */
+.github-link:hover,
+.linkedin-link:hover,
+.email-link:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}

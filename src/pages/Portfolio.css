@@ -2,14 +2,14 @@
 
 /* Container for the entire portfolio section */
 .portfolio-section {
-  padding: 2rem;
+  padding: 3rem;
   background-color: var(--background-color);
 }
 
 /* Title of the portfolio section */
 .portfolio-section h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   color: #333;
 }
@@ -18,7 +18,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* Container for individual project cards */
@@ -102,6 +102,9 @@
 
 /* Small screens (mobile phones) */
 @media (max-width: 575px) {
+  .portfolio-section {
+    padding: 1.5rem;
+  }
   .projects-grid {
     grid-template-columns: 1fr;
   }

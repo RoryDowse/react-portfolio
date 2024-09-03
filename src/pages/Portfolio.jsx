@@ -59,7 +59,7 @@ const projects = [
 export default function Portfolio() {
     return (
         <section className="portfolio-section">
-            <h2>Portfolio</h2>
+           <h2>Portfolio</h2>
            <div className="projects-grid">
                 {projects.map(project => (
                     <Project

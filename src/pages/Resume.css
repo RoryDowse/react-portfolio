@@ -1,54 +1,149 @@
+/* Container for the entire resume section */
 .resume {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 3rem;
+  background-color: var(--background-color);
 }
 
+.resume-section {
+  margin-bottom: 3rem;
+}
+
+/* Title of the resume section */
 .resume h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   color: #333;
 }
 
-.resume-link {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 18px;
-  color: #007bff;
-  text-decoration: none;
+.download-section {
+  color: var(--background-color);
+  padding: 2rem;
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.resume-link:hover {
-  text-decoration: underline;
+.download-section h3 {
+  color: var(--background-color) !important;
 }
 
-.proficiencies {
-  margin-top: 20px;
+/* Button to download PDF */
+.download-section a {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.proficiencies h3 {
+/* Override Bootstrap's .btn-primary styles */
+.btn-primary {
+  background-color: var(--accent-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Optionally, set the hover and focus states to ensure consistency */
+.btn-primary:hover {
+  background-color: #f7f4a8 !important;
+}
+
+/* Title of the Developer Proficiencies section */
+.resume h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+/* Grid container for proficiency cards */
+.proficiency-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Container for individual proficiency cards */
+.proficiency-card {
+  flex: 1 1 calc(33.333% - 20px);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for proficiency cards */
+.proficiency-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for proficiency card headings */
+.proficiency-card h4 {
   font-size: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.proficiency-type-list {
+/* Styling for proficiency list items */
+.proficiency-list {
   list-style-type: none;
   padding: 0;
-}
-
-.proficiency-title {
-  font-size: 18px;
-  margin-bottom: 3.5rem;
-}
-
-.proficiency-list {
-  margin-top: 10px;
-  padding-left: 20px;
-  list-style-type: none;
 }
 
 .proficiency-list li {
   font-size: 16px;
   margin-bottom: 6px;
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 575px) {
+  .resume {
+    padding: 2rem;
+  }
+  .proficiency-cards {
+    flex-direction: column;
+  }
+  .proficiency-card {
+    flex: 1 1 100%;
+  }
+  .proficiency-card h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .proficiency-cards {
+    flex-direction: row;
+  }
+  .proficiency-card {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  .proficiency-card h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .proficiency-cards {
+    flex-direction: row;
+  }
+  .proficiency-card {
+    flex: 1 1 calc(33.333% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra large screens (large desktops) */
+@media (min-width: 1200px) {
+  .proficiency-cards {
+    flex-direction: row;
+  }
+  .proficiency-card {
+    flex: 1 1 calc(25% - 20px);
+    margin-bottom: 20px;
+  }
 }

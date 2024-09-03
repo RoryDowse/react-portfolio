@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="mb-2">
           <a 
             href="https://www.linkedin.com/in/rorydowse" 
-            className="text-light me-3" 
+            className="linkedin-link me-3" 
             aria-label="LinkedIn"
             style={{ fontSize: '24px' }}
             target='_blank'
@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
           <a 
             href="https://github.com/rorydowse" 
-            className="text-light me-3" 
+            className="github-link me-3" 
             aria-label="GitHub"
             style={{ fontSize: '24px' }}
             target='_blank'
@@ -32,7 +32,7 @@ export default function Footer() {
           </a>
           <a 
             href="mailto:rorydowse@hotmail.com" 
-            className="text-light" 
+            className="email-link" 
             aria-label="Email"
             style={{ fontSize: '24px' }}
           >

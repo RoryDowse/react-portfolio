@@ -4,59 +4,69 @@ import './Resume.css';
 export default function Resume() {
     return (
         <section className="resume">
-            <h2>Resume</h2>
+            <div className="resume-section">
+                <h2>Resume</h2>
 
-            {/* Link to downloadable resume */}
-            <a
-                href="../assets/rory-dowse-resume.pdf"
-                download="Rory Dowse Resume.pdf"
-                className="resume-link"
-            >
-                Download My Resume
-            </a>
+                {/* Link to downloadable resume */}
+                <div className="download-section">
+                <h3>Download</h3>
+                <p>Download my resume:</p>
+                <a
+                    href="../assets/rory-dowse-resume.pdf"
+                    download="Rory Dowse Resume.pdf"
+                    className="download-form button btn btn-primary"
+                >
+                    Download
+                </a>
+                </div>
+            </div>
 
             {/* List of proficiencies */}
             <div className="proficiencies">
-                <h3>Developer Proficiencies</h3>
-                <ul className="proficiency-type-list">
-                    <li className="proficiency-title"><strong>Front-End Technologies:</strong>
-                        <ul className="proficiency-list">
-                            <li>React.js</li>
-                            <li>HTML</li>
-                            <li>Cascading Style Sheets (CSS)</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>jQuery</li>
-                            <li>Responsive Web Design</li>
-                            <li>UX/UI Design</li>
-                        </ul>
-                    </li>
-                    <li className="proficiency-title"><strong>Back-End Technologies:</strong>
-                        <ul className="proficiency-list">
-                            <li>Node.js</li>
-                            <li>PostgreSQL</li>
-                            <li>SQL</li>
-                            <li>REST APIs</li>
-                            <li>AJAX</li>
-                            <li>Application Programming Interfaces (API)</li>
-                        </ul>
-                    </li>
-                    <li className="proficiency-title"><strong>Development Tools and Methodologies:</strong>
-                        <ul className="proficiency-list">
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Visual Studio Code</li>
-                            <li>Command Line</li>
-                            <li>Developer Tools</li>
-                            <li>Agile Methodologies</li>
-                            <li>Web Accessibility</li>
-                            <li>Wireframing</li>
-                            <li>Prompt Engineering</li>
-                            <li>Document Object Model (DOM)</li>
-                        </ul>
-                    </li>
-                </ul>
+                <h3 className="download-title">Developer Proficiencies</h3>
+                <div className="proficiency-cards">
+                    <div className="proficiency-card">
+                        <h4>Front-End Technologies:</h4>
+                            <ul className="proficiency-list">
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>jQuery</li>
+                                <li>React.js</li>
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>UX/UI Design</li>
+                                <li>Responsive Web Design</li>
+                            </ul>
+                    </div>
+                    <div className="proficiency-card">
+                        <h4>Back-End Technologies:</h4>
+                            <ul className="proficiency-list">
+                                <li>SQL</li>
+                                <li>AJAX</li>
+                                <li>Node.js</li>
+                                <li>REST APIs</li>
+                                <li>PostgreSQL</li>
+                                <li>Application Programming Interfaces (API)</li>                         
+                            </ul>
+                        </div>
+                    <div className="proficiency-card">
+                        <h4>Development Tools and Methodologies:</h4>
+                            <ul className="proficiency-list">
+                                <li>Git</li>
+                                <li>DOM</li>
+                                <li>OOP</li>
+                                <li>GitHub</li>
+                                <li>Wireframing</li>
+                                <li>Developer Tools</li>
+                                <li>Web Accessibility</li>
+                                <li>Prompt Engineering</li>
+                                <li>Visual Studio Code</li>
+                                <li>Agile Methodologies</li>
+                                <li>Command Line Interface</li>
+                            </ul>
+                    </div>
+                </div>
             </div>
         </section>
     );
