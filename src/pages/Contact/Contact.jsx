@@ -15,7 +15,7 @@ export default function Contact() {
     // State to hold validation errors
     const [errors, setErrors] = useState({});
 
-    // Handle input field blur (when user moves out of the field)
+    // Handle input field error when user moves out of the field
     const handleBlur = (e) => {
         console.log(e);
         const { name, value } = e.target;

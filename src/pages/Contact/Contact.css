@@ -1,8 +1,10 @@
+/* Styles for the contact section, including padding and background color */
 .contact-section {
   padding: 2rem;
   background-color: var(--background-color);
 }
 
+/* Styles for the heading in the contact section, including animation */
 .contact-section h2 {
   text-align: center;
   margin-bottom: 3rem;
@@ -10,6 +12,8 @@
   color: #333;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
+
+/* Styles for the contact form container */
 .contact-form {
   background-color: var(--muted-tertiary-color);
   max-width: 600px;
@@ -20,16 +24,19 @@
   animation: myAnim 0.75s ease 0s 1 normal forwards;
 }
 
+/* Margin styling for form groups */
 .contact-form .form-group {
   margin-bottom: 1rem;
 }
 
+/* Styles for form labels */
 .contact-form label {
   color: var(--background-color);
   display: block;
   margin-bottom: 0.5rem;
 }
 
+/* Styles for input fields and textareas */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -38,11 +45,13 @@
   border-radius: 0.25rem;
 }
 
+/* Styles for textarea to set height and resizing options */
 .contact-form textarea {
   height: 150px;
   resize: vertical;
 }
 
+/* Styles for submit button, including background color and transition */
 .contact-form button {
   border: none;
   padding: 0.75rem 1.5rem;
@@ -57,16 +66,18 @@
   color: var(--text-color) !important;
 }
 
-/* Optionally, set the hover and focus states to ensure consistency */
+/* Hover effect for the primary button */
 .btn-primary:hover {
   background-color: #f7f4a8 !important;
 }
 
+/* Styles for form errors */
 .form-errors p {
   color: var(--background-color) !important;
   margin: 0.5rem 0;
 }
 
+/* Keyframes for animation */
 @keyframes myAnim {
   0% {
     opacity: 0;

@@ -1,7 +1,9 @@
+/* Styles for the custom footer, setting the background color to the secondary color from the theme */
 .custom-footer {
   background-color: var(--secondary-color);
 }
 
+/* Base styles for social media and email links in the footer */
 .github-link,
 .linkedin-link,
 .email-link {
@@ -12,7 +14,7 @@
   transition: color 0.3s ease;
 }
 
-/* Hover effect for GitHub icon */
+/* Hover effect for social media and email links */
 .github-link:hover,
 .linkedin-link:hover,
 .email-link:hover {

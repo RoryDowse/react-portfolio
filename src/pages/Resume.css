@@ -1,9 +1,10 @@
-/* Container for the entire resume section */
+/* Container for the entire resume page */
 .resume {
   padding: 3rem;
   background-color: var(--background-color);
 }
 
+/* Container for the resume section page */
 .resume-section {
   margin-bottom: 3rem;
 }
@@ -17,6 +18,7 @@
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 
+/* Container for the download section */
 .download-section {
   color: var(--background-color);
   padding: 2rem;
@@ -28,6 +30,7 @@
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
+/* Title of the download section */
 .download-section h3 {
   color: var(--background-color) !important;
   margin-bottom: 1rem !important;

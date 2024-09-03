@@ -1,22 +1,27 @@
+/* Sets the background color of the element to the primary color defined in the theme */
 .name-background {
   background-color: var(--primary-color);
 }
 
+/* Styles the subtitle with the accent color and sets the font size */
 .subtitle {
   color: var(--accent-color);
   font-size: 22px;
 }
 
+/* Flexbox container for horizontally centering navigation list items */
 .custom-nav-list {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
+/* Custom font size for h1 elements */
 .fs-custom-h1 {
   font-size: 4rem;
 }
 
+/* Custom font size for p elements */
 .fs-custom-p {
   font-size: 1.5rem;
 }

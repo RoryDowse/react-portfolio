@@ -1,8 +1,10 @@
+/* Styles for the About Me section */
 .about-me {
   padding: 20px;
   text-align: center;
 }
 
+/* Container for the content of the About Me section */
 .about-me-content {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@
   margin: 0 auto;
 }
 
+/* Styles for the profile photo in the About Me section */
 .about-me-photo {
   width: 260px;
   height: 260px;
@@ -22,16 +25,19 @@
   transition: transform 0.3s ease, box-shadow 0.1s ease;
 }
 
+/* Hover effect for the profile photo */
 .about-me-photo:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles for the biography text in the About Me section */
 .about-me-bio {
   text-align: justify;
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
+/* Styles for the About Me section heading */
 .about-me-bio h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -40,15 +46,18 @@
   animation: myAnim 0.75s ease 0s 1 normal forwards;
 }
 
+/* Styles for the first letter of the first paragraph */
 .first-letter {
   font-size: 3em;
 }
 
+/* Styles for paragraphs within the biography */
 .about-me-bio p {
   font-size: 1rem;
   line-height: 2rem;
 }
 
+/* Keyframes for the animation applied to bio text and heading */
 @keyframes myAnim {
   0% {
     opacity: 0;

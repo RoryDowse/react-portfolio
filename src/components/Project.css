@@ -1,14 +1,17 @@
+/* Container for the project card, which is positioned relative to allow the overlay to be positioned absolutely within it */
 .project-container {
   position: relative;
   overflow: hidden;
 }
 
+/* Styles for the project image, ensuring it fills the container width while maintaining aspect ratio */
 .project-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Overlay that appears over the project image on hover, initially hidden with opacity */
 .overlay {
   position: absolute;
   top: 0;
@@ -24,10 +27,12 @@
   flex-direction: column;
 }
 
+/* Shows the overlay when hovering over the project container */
 .project-container:hover .overlay {
   opacity: 1;
 }
 
+/* Styles for the project title within the overlay */
 .project-title {
   color: #fff;
   font-size: 24px;
@@ -36,16 +41,19 @@
   margin-bottom: 10px;
 }
 
+/* Changes the appearance of the project title on hover */
 .project-title:hover {
   color: #ffcc00;
   text-decoration: underline;
 }
 
+/* Styles for the GitHub link within the overlay */
 .github-link {
   color: #fff;
   text-decoration: none;
 }
 
+/* Changes the appearance of the GitHub link on hover */
 .github-link:hover {
   color: #ffcc00;
 }
