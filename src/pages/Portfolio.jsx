@@ -1,28 +1,30 @@
 import Project from '../components/Project';
 import './Portfolio.css';
 
-import project1Image from '../assets/project-1.png';
-import project2Image from '../assets/project-2.png';
-import project3Image from '../assets/project-3.png';
-import project4Image from '../assets/project-4.png';
-import project5Image from '../assets/project-5.png';
-import project6Image from '../assets/project-6.png';
+import project1Image from '../assets/finance-flow.png';
+import project2Image from '../assets/car-loan-payment-calculator.png';
+import project3Image from '../assets/james-woodrow-violin.png';
+import project4Image from '../assets/candidate-search.png';
+import project5Image from '../assets/weather-dashboard.png';
+import project6Image from '../assets/employee-tracker.png';
+import project7Image from '../assets/vehicle-builder.png';
+import project8Image from '../assets/readme-generator.png';
 // Add more project images as needed
 
 const projects = [
     {
         id: 1,
         image: project1Image,
-        title: 'Car Loan Payment Calculator',
-        deployedLink: 'https://rorydowse.github.io/car-loan-payment/',
-        githubLink: 'https://github.com/RoryDowse/car-loan-payment',
+        title: 'FinanceFlow',
+        deployedLink: 'https://finance-flow-f2zu.onrender.com/',
+        githubLink: 'https://github.com/RoryDowse/finance-flow',
     },
     {
         id: 2,
         image: project2Image,
-        title: 'Weather Dashboard',
-        deployedLink: 'https://weather-dashboard-wuv2.onrender.com',
-        githubLink: 'https://github.com/RoryDowse/weather-dashboard',
+        title: 'Car Loan Payment Calculator',
+        deployedLink: 'https://rorydowse.github.io/car-loan-payment/',
+        githubLink: 'https://github.com/RoryDowse/car-loan-payment',
     },
     {
         id: 3,
@@ -34,20 +36,34 @@ const projects = [
     {
         id: 4,
         image: project4Image,
+        title: 'Candidate Search',
+        deployedLink: 'https://candidate-search-q9zr.onrender.com/',
+        githubLink: 'https://github.com/RoryDowse/candidate-search',
+    },
+    {
+        id: 5,
+        image: project5Image,
+        title: 'Weather Dashboard',
+        deployedLink: 'https://weather-dashboard-wuv2.onrender.com',
+        githubLink: 'https://github.com/RoryDowse/weather-dashboard',
+    },
+    {
+        id: 6,
+        image: project6Image,
         title: 'Employee Tracker',
         deployedLink: 'https://drive.google.com/file/d/1VY9Po9H4JHbiBqo2l9NSJ67scy9An9Kh/view?usp=drive_link',
         githubLink: 'https://github.com/RoryDowse/employee-tracker',
     },
     {
-        id: 5,
-        image: project5Image,
+        id: 7,
+        image: project7Image,
         title: 'Vehicle Builder',
         deployedLink: 'https://drive.google.com/file/d/1R-ngPIMKgweiBMfxdGWGjm9BPcg-Z6Yr/view?usp=drive_link',
         githubLink: 'https://github.com/RoryDowse/vehicle-builder',
     },
     {
-        id: 6,
-        image: project6Image,
+        id: 8,
+        image: project8Image,
         title: 'README Generator',
         deployedLink: 'https://drive.google.com/file/d/1Z5uzQfWhapHrhtFWBnabrZc9ubGvrIOE/view?usp=sharing',
         githubLink: 'https://github.com/RoryDowse/readme-generator',

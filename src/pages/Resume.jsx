@@ -42,10 +42,15 @@ export default function Resume() {
                         <h4>Back-End Technologies:</h4>
                             <ul className="proficiency-list">
                                 <li>SQL</li>
-                                <li>AJAX</li>
+                                <li>AJAX</li>                               
+                                <li>bcrypt</li>
                                 <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Sequelize</li>
                                 <li>REST APIs</li>
                                 <li>PostgreSQL</li>
+                                <li>Prompt Engineering</li>
+                                <li>JSON Web Token (JWT)</li>
                                 <li>Application Programming Interfaces (API)</li>                         
                             </ul>
                         </div>
@@ -55,11 +60,12 @@ export default function Resume() {
                                 <li>Git</li>
                                 <li>DOM</li>
                                 <li>OOP</li>
+                                <li>Vite</li>
                                 <li>GitHub</li>
+                                <li>Insomnia</li>
                                 <li>Wireframing</li>
                                 <li>Developer Tools</li>
                                 <li>Web Accessibility</li>
-                                <li>Prompt Engineering</li>
                                 <li>Visual Studio Code</li>
                                 <li>Agile Methodologies</li>
                                 <li>Command Line Interface</li>
