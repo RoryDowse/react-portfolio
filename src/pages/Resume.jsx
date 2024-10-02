@@ -48,6 +48,8 @@ export default function Resume() {
                                 <li>Express.js</li>
                                 <li>Sequelize</li>
                                 <li>REST APIs</li>
+                                <li>MongoDB</li>
+                                <li>Mongoose</li>
                                 <li>PostgreSQL</li>
                                 <li>Prompt Engineering</li>
                                 <li>JSON Web Token (JWT)</li>
@@ -67,6 +69,7 @@ export default function Resume() {
                                 <li>Developer Tools</li>
                                 <li>Web Accessibility</li>
                                 <li>Visual Studio Code</li>
+                                <li>MongoDB Compass</li>
                                 <li>Agile Methodologies</li>
                                 <li>Command Line Interface</li>
                             </ul>
