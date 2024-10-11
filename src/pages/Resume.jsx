@@ -44,8 +44,10 @@ export default function Resume() {
                                 <li>SQL</li>
                                 <li>AJAX</li>                               
                                 <li>bcrypt</li>
+                                <li>Apollo</li>
                                 <li>NoSQL</li>
                                 <li>Node.js</li>
+                                <li>GraphQL</li>
                                 <li>Express.js</li>
                                 <li>Sequelize</li>
                                 <li>REST APIs</li>
