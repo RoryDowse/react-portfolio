@@ -63,10 +63,12 @@ export default function Resume() {
                         <h4>Development Tools and Methodologies:</h4>
                             <ul className="proficiency-list">
                                 <li>Git</li>
-                                <li>DOM</li>
-                                <li>OOP</li>
                                 <li>Vite</li>
+                                <li>OOP</li>
+                                <li>DOM</li>
+                                <li>Vitest</li>
                                 <li>GitHub</li>
+                                <li>Cypress</li>
                                 <li>Insomnia</li>
                                 <li>Wireframing</li>
                                 <li>Developer Tools</li>
@@ -75,6 +77,7 @@ export default function Resume() {
                                 <li>MongoDB Compass</li>
                                 <li>Agile Methodologies</li>
                                 <li>Command Line Interface</li>
+                                <li>Test-Driven Development</li>
                             </ul>
                     </div>
                 </div>
