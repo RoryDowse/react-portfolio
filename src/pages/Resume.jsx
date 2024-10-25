@@ -42,7 +42,8 @@ export default function Resume() {
                         <h4>Back-End Technologies:</h4>
                             <ul className="proficiency-list">
                                 <li>SQL</li>
-                                <li>AJAX</li>                               
+                                <li>AJAX</li>
+                                <li>YAML</li>                           
                                 <li>bcrypt</li>
                                 <li>Apollo</li>
                                 <li>NoSQL</li>
@@ -66,8 +67,10 @@ export default function Resume() {
                                 <li>Vite</li>
                                 <li>OOP</li>
                                 <li>DOM</li>
+                                <li>MERN</li>
                                 <li>Vitest</li>
                                 <li>GitHub</li>
+                                <li>CircleCI</li>
                                 <li>Cypress</li>
                                 <li>Insomnia</li>
                                 <li>Wireframing</li>
@@ -78,6 +81,9 @@ export default function Resume() {
                                 <li>Agile Methodologies</li>
                                 <li>Command Line Interface</li>
                                 <li>Test-Driven Development</li>
+                                <li>Continuous Delivery (CD)</li>
+                                <li>Continuous Integration (CI)</li>
+
                             </ul>
                     </div>
                 </div>
