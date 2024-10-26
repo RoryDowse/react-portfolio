@@ -66,8 +66,6 @@ export default function Contact() {
     return (
         <section className="contact-section">
             <h2>Contact Me</h2>
-            <p>Please note that this form is currently under construction.</p> 
-            <p>Please contact me on 480-336-0379 if you have any questions.</p>
             <form 
                 onSubmit={handleSubmit} 
                 className="contact-form" 
