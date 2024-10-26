@@ -28,21 +28,19 @@ export default function Resume() {
                         <h4 className="proficiency-card-title">Front-End Technologies:</h4>
                             <ul className="proficiency-list">
                                 <li>CSS</li>
+                                <li>AJAX</li>
                                 <li>HTML</li>
                                 <li>jQuery</li>
                                 <li>React.js</li>
                                 <li>Bootstrap</li>
                                 <li>JavaScript</li>
                                 <li>TypeScript</li>
-                                <li>UX/UI Design</li>
-                                <li>Responsive Web Design</li>
                             </ul>
                     </div>
                     <div className="proficiency-card">
                         <h4>Back-End Technologies:</h4>
                             <ul className="proficiency-list">
                                 <li>SQL</li>
-                                <li>AJAX</li>
                                 <li>YAML</li>                           
                                 <li>bcrypt</li>
                                 <li>Apollo</li>
@@ -55,7 +53,6 @@ export default function Resume() {
                                 <li>MongoDB</li>
                                 <li>Mongoose</li>
                                 <li>PostgreSQL</li>
-                                <li>Prompt Engineering</li>
                                 <li>JSON Web Token (JWT)</li>
                                 <li>Application Programming Interfaces (API)</li>                         
                             </ul>
@@ -78,7 +75,9 @@ export default function Resume() {
                                 <li>Web Accessibility</li>
                                 <li>Visual Studio Code</li>
                                 <li>MongoDB Compass</li>
+                                <li>Prompt Engineering</li>
                                 <li>Agile Methodologies</li>
+                                <li>Responsive Web Design</li>
                                 <li>Command Line Interface</li>
                                 <li>Test-Driven Development</li>
                                 <li>Continuous Delivery (CD)</li>
