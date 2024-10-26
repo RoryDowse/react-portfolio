@@ -2,7 +2,6 @@ import { useState } from 'react';
 import validateForm from './ValidateContactForm.jsx';
 import './Contact.css';
 
-// Define the Contact component
 export default function Contact() {
     // State to hold form data
     const [formData, setFormData] = useState({
@@ -15,9 +14,15 @@ export default function Contact() {
     // State to hold validation errors
     const [errors, setErrors] = useState({});
 
-    // Handle input field error when user moves out of the field
+    // Function to encode form data for Netlify submission
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    };
+
+    // Handle input field validation when user leaves the field
     const handleBlur = (e) => {
-        console.log(e);
         const { name, value } = e.target;
         const newErrors = validateForm({ ...formData, [name]: value });
         setErrors({ ...errors, [name]: newErrors[name] });
@@ -33,18 +38,23 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent default form submission behavior
 
-        // Get validation errors
+        // Perform validation
         const validationErrors = validateForm(formData);
-
-        // Check if there are validation errors
         if (Object.keys(validationErrors).length > 0) {
-            // Set errors state with validation errors
-            setErrors(validationErrors);
+            setErrors(validationErrors); // Show validation errors
         } else {
-            // If no validation errors, process with form submission
-            console.log('Form data submitted:', formData);
-            setErrors({}); // Reset form state (clear errors)
-            setFormData({ // Reset form data
+            // If no validation errors, send form data to Netlify
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "portfolio-contact", ...formData })
+            })
+                .then(() => alert("Form successfully submitted!"))
+                .catch(error => alert("Error submitting form: " + error));
+
+            // Reset form state
+            setErrors({});
+            setFormData({
                 firstName: '',
                 lastName: '',
                 email: '',
@@ -59,15 +69,14 @@ export default function Contact() {
             <p>Please note that this form is currently under construction.</p> 
             <p>Please contact me on 480-336-0379 if you have any questions.</p>
             <form 
-            onSubmit={handleSubmit} 
-            className="contact-form" 
-            name="portfolio-contact" 
-            method="post" 
-            data-netlify="true"
+                onSubmit={handleSubmit} 
+                className="contact-form" 
+                name="portfolio-contact" 
+                method="post" 
+                data-netlify="true"
             >
-            <input type="hidden" name="form-name" value="portfolio-contact" />
-            <input type="hidden" name="subject" value="Portfolio Contact Form" />
-
+                <input type="hidden" name="form-name" value="portfolio-contact" />
+                <input type="hidden" name="subject" value="Portfolio Contact Form" />
 
                 <div className="form-group">
                     <label htmlFor="firstName">First Name:</label>
@@ -78,8 +87,7 @@ export default function Contact() {
                         placeholder="Enter your first name"
                         value={formData.firstName}
                         onChange={handleChange}
-                        onBlur={handleBlur}
-                        onMouseOut={handleBlur}  
+                        onBlur={handleBlur} 
                         className="form-control"
                     />
                 </div>
@@ -93,8 +101,7 @@ export default function Contact() {
                         placeholder="Enter your last name"
                         value={formData.lastName}
                         onChange={handleChange}
-                        onBlur={handleBlur}
-                        onMouseOut={handleBlur} 
+                        onBlur={handleBlur} 
                         className="form-control"
                     />
                 </div>
@@ -108,8 +115,7 @@ export default function Contact() {
                         placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleChange}
-                        onBlur={handleBlur}
-                        onMouseOut={handleBlur}  
+                        onBlur={handleBlur}  
                         className="form-control"
                     />
                 </div>
@@ -122,13 +128,11 @@ export default function Contact() {
                         placeholder="Enter your message"
                         value={formData.message}
                         onChange={handleChange}
-                        onBlur={handleBlur}
-                        onMouseOut={handleBlur} 
+                        onBlur={handleBlur} 
                         className="form-control"
                     ></textarea>
                 </div>
 
-                {/* Submit button */}
                 <div className="form-group">
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </div>
