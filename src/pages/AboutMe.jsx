@@ -5,7 +5,7 @@ export default function AboutMe() {
         <section className="about-me">
             <div className="about-me-content">
                 <img
-                src="./assets/rory-dowse-headshot.webp"
+                src="./assets/rory-dowse-headshot.jpg"
                 alt="Rory Dowse"
                 className="about-me-photo"
                 />
