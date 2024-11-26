@@ -44,10 +44,12 @@ export default function Resume() {
                                 <li>YAML</li>                           
                                 <li>bcrypt</li>
                                 <li>Apollo</li>
+                                <li>Python</li>
                                 <li>NoSQL</li>
                                 <li>Node.js</li>
                                 <li>GraphQL</li>
                                 <li>Express.js</li>
+                                <li>PyMongo</li>
                                 <li>Sequelize</li>
                                 <li>REST APIs</li>
                                 <li>MongoDB</li>
