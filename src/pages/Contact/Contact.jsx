@@ -65,6 +65,8 @@ export default function Contact() {
         }
     };
 
+    console.log(formData);
+
     return (
         <section className="contact-section">
             <h2>Contact Me</h2>
