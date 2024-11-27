@@ -19,8 +19,9 @@ const validateForm = (formData) => {
         // Validate telephone
         if (!formData.telephone) {
             errors.telephone = "Telephone is required";
-        } else if (formData.telephone.length < 10) {
-            errors.telephone = "Telephone must be at least 10 characters long";
+        } else if (!/^\d{10}$/.test(formData.telephone)) {
+            // Ensure the phone number has exactly 10 digits, no formatting (no dashes, spaces, etc.)
+            errors.telephone = "Please enter a 10-digit phone number without any spaces or special characters";
         }
 
         // Validate email
