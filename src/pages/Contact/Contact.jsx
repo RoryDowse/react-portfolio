@@ -7,6 +7,7 @@ export default function Contact() {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
+        telephone: '',
         email: '',
         message: ''
     });
@@ -57,6 +58,7 @@ export default function Contact() {
             setFormData({
                 firstName: '',
                 lastName: '',
+                telephone: '',
                 email: '',
                 message: ''
             });
@@ -105,6 +107,20 @@ export default function Contact() {
                 </div>
 
                 <div className="form-group">
+                    <label htmlFor="telephone">Telephone:</label>
+                    <input 
+                        type="tel" 
+                        id="telephone" 
+                        name="telephone" 
+                        placeholder="Enter your telephone number"
+                        value={formData.telephone}
+                        onChange={handleChange}
+                        onBlur={handleBlur} 
+                        className="form-control"
+                    />
+                </div>
+
+                <div className="form-group">
                     <label htmlFor="email">Email:</label>
                     <input 
                         type="email" 
@@ -139,6 +155,7 @@ export default function Contact() {
                 <div className="form-errors">
                     {errors.firstName && <p className="form-error">{errors.firstName}</p>}
                     {errors.lastName && <p className="form-error">{errors.lastName}</p>}
+                    {errors.telephone && <p className="form-error">{errors.telephone}</p>}
                     {errors.email && <p className="form-error">{errors.email}</p>}
                     {errors.message && <p className="form-error">{errors.message}</p>}
                 </div>

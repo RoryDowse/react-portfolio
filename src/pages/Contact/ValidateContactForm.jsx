@@ -16,6 +16,13 @@ const validateForm = (formData) => {
             errors.lastName = "Last Name must be at least 2 characters long";
         }
 
+        // Validate telephone
+        if (!formData.telephone) {
+            errors.telephone = "Telephone is required";
+        } else if (formData.telephone.length < 10) {
+            errors.telephone = "Telephone must be at least 10 characters long";
+        }
+
         // Validate email
         if (!formData.email) {
             errors.email = "Email is required";
