@@ -11,6 +11,7 @@ import './App.css';
 import App from './App';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
+import Blog from './pages/Blog';
 import Contact from './pages/Contact/Contact';
 import Resume from './pages/Resume';
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: 'portfolio',
         element: <Portfolio />,
+      },
+      {
+        path: 'blog',
+        element: <Blog />,
       },
       {
         path: 'contact',
