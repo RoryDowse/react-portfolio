@@ -12,6 +12,7 @@ import App from './App';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact/Contact';
 import Resume from './pages/Resume';
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog />,
+      },
+      {
+        path: 'blog/:postId',
+        element: <BlogPost />,
       },
       {
         path: 'contact',
