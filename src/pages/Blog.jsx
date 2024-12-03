@@ -27,7 +27,7 @@ const Blog = () => {
                 <p>No posts available.</p>
             ) : (
                 posts.map((post) => (
-                    <Link key={post.id} to={`/blog/${post.id}`} className="blog-card-link">
+                    <Link key={post.id} to={`/blog/${post.slug}`} className="blog-card-link">
                         <div className="blog-card">
                             <h3>{post.title}</h3>
                             <p>{post.intro}</p>

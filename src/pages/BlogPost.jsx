@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import './BlogPost.css';
 
 const BlogPost = () => {
-    const { postId } = useParams();
+    const { slug } = useParams();
     const [post, setPost] = useState(null);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const BlogPost = () => {
             try {
                 const response = await fetch(`/posts.json`);
                 const data = await response.json();
-                const foundPost = data.find(post => post.id === parseInt(postId));
+                const foundPost = data.find(post => post.slug === slug);
                 setPost(foundPost); // Set fetched post in the state
             } catch (error) {
                 console.error('Error fetching blog post:', error);
@@ -20,7 +20,7 @@ const BlogPost = () => {
         };
 
         fetchPost(); // Call the fetch function
-    }, [postId]); // Add postId as a dependency to re-run the effect on postId change
+    }, [slug]); // Add slug as a dependency to re-run the effect on slug change
 
     if (!post) return <p>Loading...</p>;
 
