@@ -1,21 +1,90 @@
 [
     {
       "id": 1,
-      "title": "My Journey as a Developer",
-      "content": "This is the content of my first blog post. I'll share my journey from learning to coding!",
-      "intro": "I started my journey as a self-taught developer, and here's how it all began..."
-    },
-    {
-      "id": 2,
-      "title": "Best Practices in React",
-      "content": "In this post, I talk about some of the best practices when working with React.",
-      "intro": "React is a powerful library for building UIs, and in this post, I'll cover some best practices..."
-    },
-    {
-      "id": 3,
-      "title": "Best Practices in React",
-      "content": "In this post, I talk about some of the best practices when working with React.",
-      "intro": "React is a powerful library for building UIs, and in this post, I'll cover some best practices..."
+      "title": "Coding Challenge: Break camelCase and Immutable Strings",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the Break camelCase challenge, the developer is tasked to “Complete the solution so that the function will break up camel casing, using a space between words.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "At first glance, the following pseudocode may seem sufficient:"
+        },
+        {
+          "type": "code",
+          "language": "text",
+          "text": "// parse through the string\n// check if the index is equal to toUpperCase\n// if true, insert a space\n// return the string"
+        },
+        {
+          "type": "paragraph",
+          "text": "However, this approach will not work as intended because strings in JavaScript are immutable. This means they cannot be modified in place, and a new string must be created instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "To solve this challenge, the following steps should be followed:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Initialize a new empty string",
+            "Perform work on the original string",
+            "Append characters to the new string",
+            "Return the new string"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Since the original string cannot be directly modified, appending changes to a new string ensures the desired result:"
+        },
+        {
+          "type": "code",
+          "language": "javascript",
+          "text": "function solution(string) {\n  // Step 1: Initialize a new empty string\n  let result = \"\";\n\n  // Step 2: Perform work on the original string\n  for (let i = 0; i < string.length; i++) {\n    // Check if the character is uppercase\n    if (string[i] === string[i].toUpperCase() && string[i] !== string[i].toLowerCase()) {\n      // Step 3: Append a space before the uppercase letter\n      result += \" \";\n    }\n    // Append the current character to the result\n    result += string[i];\n  }\n\n  // Step 4: Return the new string\n  return result;\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "While this solution works well, a simpler and more concise approach using regex can also solve the problem effectively:"
+        },
+        {
+          "type": "code",
+          "language": "javascript",
+          "text": "function solution(string) {\n  return string.replace(/([A-Z])/g, ' $1');\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here's how the regex solution works:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The uppercase letter is matched using `/([A-Z])/`.",
+            "The group is captured using `()`.",
+            "The replacement happens globally across the string using the `g` flag.",
+            "The uppercase letter is replaced by a space followed by the letter using `' $1'`."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Both methods demonstrate the importance of understanding how strings behave in JavaScript."
+        },
+        {
+          "type": "paragraph",
+          "text": "The key takeaways from this challenge are:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Strings are immutable.",
+            "Changes are appended to a new string.",
+            "Regex can simplify character replacements."
+          ]
+        }
+      ],
+      "intro": "Explore the Break camelCase challenge, sharpening problem-solving skills and highlighting the importance of string immutability in JavaScript."
     }
   ]
   

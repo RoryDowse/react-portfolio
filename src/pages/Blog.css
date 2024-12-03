@@ -8,8 +8,8 @@
 /* Styles for the Blog Page heading */
 .blog-page h2 {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
   color: #333;
   font-weight: bold;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
@@ -32,35 +32,28 @@
 
 /* Styles for the blog post title */
 .blog-page h3 {
-  font-size: 2rem;
-  color: #17486c; /* Primary color */
+  font-size: 1.5rem;
+  color: var(--primary-color);
   margin: 1rem;
   font-weight: 600;
   animation: myAnim 0.75s ease 0s 1 normal forwards;
 }
 
 .blog-page h3:hover {
-  color: #fbde65; /* Accent color */
-  transition: color 0.3s ease;
   text-decoration: underline;
 }
 
 /* Styles for the blog post intro paragraph */
 .blog-page p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #666;
   line-height: 1.6;
 }
 
 /* Styles for the links */
 .blog-page a {
-  color: #17486c; /* Primary color */
+  color: var(--primary-color);
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.blog-page a:hover {
-  color: #fbde65; /* Accent color */
 }
 
 /* Animation for fade-in effect */

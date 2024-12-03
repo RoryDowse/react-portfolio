@@ -26,9 +26,36 @@ const BlogPost = () => {
 
     return (
         <div className="blog-post">
-            <h2>{post.title}</h2>
-            <p>{post.content}</p>
-        </div>
+        <h2>{post.title}</h2>
+        {post.content.map((block, index) => {
+          switch (block.type) {
+            case "paragraph":
+              return <p key={index}>{block.text}</p>;
+            case "code":
+              return (
+                <pre key={index}>
+                  <code>{block.text}</code>
+                </pre>
+              );
+            case "list":
+              return block.ordered ? (
+                <ol key={index}>
+                  {block.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ol>
+              ) : (
+                <ul key={index}>
+                  {block.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              );
+            default:
+              return null; // Handle unknown types gracefully
+          }
+        })}
+      </div>
     );
 };
   

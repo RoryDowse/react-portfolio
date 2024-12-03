@@ -17,10 +17,10 @@
 
 /* Styles for the post title */
 .blog-post h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #17486c; /* Primary color */
-  margin-bottom: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
   text-align: center;
   animation: fadeIn 0.5s ease-in;
 }
@@ -35,21 +35,76 @@
   animation: fadeIn 1s ease-in;
 }
 
-/* Additional styles for content, like adding a "back to blog" button or post metadata */
-.blog-post .back-link {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #17486c; /* Primary color */
-  color: white;
-  text-decoration: none;
+/* Styles for code blocks */
+.blog-post code {
+  display: inline-block; /* Ensures inline code has proper padding and visibility */
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  background-color: #f5f5f5; /* Light gray background */
+  color: var(--primary-color);
+  padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+  word-break: break-word; /* Prevents long code from breaking layout */
+  animation: fadeIn 0.5s ease-in;
 }
 
-.blog-post .back-link:hover {
-  background-color: #fbde65; /* Accent color */
+.blog-post pre {
+  background-color: #f5f5f5; /* Matches inline code background */
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem; /* Spacing around code block */
+  border-left: 5px solid var(--primary-color);
+  overflow-x: auto; /* Enables horizontal scrolling for long code */
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Styles for ordered and unordered lists */
+.blog-post ul,
+.blog-post ol {
+  padding-left: 1.5rem; /* Indent for lists */
+  margin-bottom: 2rem; /* Spacing from other elements */
+  line-height: 1.8; /* Match paragraph line height */
+  font-size: 1.2rem; /* Match paragraph font size */
+  color: #666;
+  text-align: left;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.blog-post ul li,
+.blog-post ol li {
+  margin-bottom: 0.5rem; /* Space between list items */
+  text-align: left;
+  padding-left: 0.75rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.blog-post ul li::marker {
+  color: var(--primary-color); /* Primary color for unordered list markers */
+  text-align: left;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.blog-post ol li {
+  counter-increment: list-counter; /* Custom styling for ordered lists */
+  text-align: left;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.blog-post ol li::marker {
+  color: var(--primary-color); /* Primary color for ordered list numbers */
+  text-align: left;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Additional hover effects for clarity */
+.blog-post pre:hover,
+.blog-post code:hover {
+  background-color: #e3f2fd; /* Slight blue tint on hover */
+  text-align: left;
 }
 
 /* Animation for fade-in effect */
