@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "title": "My Journey as a Developer",
+      "content": "This is the content of my first blog post. I'll share my journey from learning to coding!",
+      "intro": "I started my journey as a self-taught developer, and here's how it all began..."
+    },
+    {
+      "id": 2,
+      "title": "Best Practices in React",
+      "content": "In this post, I talk about some of the best practices when working with React.",
+      "intro": "React is a powerful library for building UIs, and in this post, I'll cover some best practices..."
+    }
+  ]
+  
