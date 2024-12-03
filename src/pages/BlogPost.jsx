@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './BlogPost.css';
 
 const BlogPost = () => {
     const { postId } = useParams();

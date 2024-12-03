@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './Blog.css';
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
@@ -21,17 +22,17 @@ const Blog = () => {
 
     return (
         <div className="blog-page">
-            <h1>Blog</h1>
+            <h2>Blog</h2>
             {posts.length === 0 ? (
                 <p>No posts available.</p>
             ) : (
                 posts.map((post) => (
-                    <div key={post.id} className="blog-post">
-                        <h2>
-                            <Link to={`/blog/${post.id}`}>{post.title}</Link>
-                        </h2>
-                        <p>{post.intro}</p>
-                    </div>
+                    <Link key={post.id} to={`/blog/${post.id}`} className="blog-card-link">
+                        <div className="blog-card">
+                            <h3>{post.title}</h3>
+                            <p>{post.intro}</p>
+                        </div>
+                    </Link>
                 ))
             )}
         </div>

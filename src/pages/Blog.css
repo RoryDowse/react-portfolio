@@ -1,0 +1,76 @@
+/* Styles for the Blog Page container */
+.blog-page {
+  padding: 3rem;
+  background-color: var(--background-color);
+  font-family: "Arial", sans-serif;
+}
+
+/* Styles for the Blog Page heading */
+.blog-page h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #333;
+  font-weight: bold;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+
+/* Styles for individual blog posts */
+.blog-card {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the blog post title */
+.blog-page h3 {
+  font-size: 2rem;
+  color: #17486c; /* Primary color */
+  margin: 1rem;
+  font-weight: 600;
+  animation: myAnim 0.75s ease 0s 1 normal forwards;
+}
+
+.blog-page h3:hover {
+  color: #fbde65; /* Accent color */
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+/* Styles for the blog post intro paragraph */
+.blog-page p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Styles for the links */
+.blog-page a {
+  color: #17486c; /* Primary color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-page a:hover {
+  color: #fbde65; /* Accent color */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
