@@ -22,7 +22,7 @@
   color: #17486c; /* Primary color */
   margin-bottom: 1rem;
   text-align: center;
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 0.5s ease-in;
 }
 
 /* Styles for the post content */
@@ -32,7 +32,7 @@
   color: #666;
   margin-bottom: 2rem;
   text-align: justify;
-  animation: fadeIn 1.5s ease-in;
+  animation: fadeIn 1s ease-in;
 }
 
 /* Additional styles for content, like adding a "back to blog" button or post metadata */
