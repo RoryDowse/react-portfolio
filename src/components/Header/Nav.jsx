@@ -31,6 +31,16 @@ export default function Nav() {
         <NavLink 
         key={3} 
         className="nav-link" 
+        to="/blog"
+        style={({ isActive }) => ({
+          color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
+        })}
+        >
+        Blog
+      </NavLink>,
+        <NavLink 
+        key={4} 
+        className="nav-link" 
         to="/contact"
         style={({ isActive }) => ({
           color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
@@ -39,7 +49,7 @@ export default function Nav() {
         Contact
       </NavLink>,
       <NavLink 
-        key={4} 
+        key={5} 
         className="nav-link" 
         to="/resume"
         style={({ isActive }) => ({
