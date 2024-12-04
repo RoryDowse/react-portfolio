@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Blog.css';
@@ -22,6 +23,10 @@ const Blog = () => {
 
     return (
         <div className="blog-page">
+            <Helmet>
+                <title>Blog | Rory Dowse</title>
+                <meta name="description" content="View Rory Dowse's blog posts to learn solutions to challenges encountered in software development." />
+            </Helmet>
             <h2>Blog</h2>
             {posts.length === 0 ? (
                 <p>No posts available.</p>

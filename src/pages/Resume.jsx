@@ -1,8 +1,13 @@
+import { Helmet } from 'react-helmet';
 import './Resume.css';
 
 export default function Resume() {
     return (
         <section className="resume">
+            <Helmet>
+                <title>Resume | Rory Dowse</title>
+                <meta name="description" content="Download Rory Dowse's resume and view the proficiencies he can bring to your team or project." />
+            </Helmet>
             <div className="resume-section">
                 <h2>Resume</h2>
 

@@ -1,8 +1,13 @@
+import { Helmet } from 'react-helmet';
 import './AboutMe.css';
 
 export default function AboutMe() {
     return (
         <section className="about-me">
+            <Helmet>
+                <title>About Me | Rory Dowse</title>
+                <meta name="description" content="Learn about Rory Dowse, a forward-thinking Software Engineer specializing in the MERN stack. Contact Rory today!" />
+            </Helmet>
             <div className="about-me-content">
                 <img
                 src="./assets/rory-dowse-headshot.webp"
