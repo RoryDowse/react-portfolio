@@ -11,7 +11,6 @@ export default function Project({ image, title, deployedLink, githubLink }) {
                     alt={`Screenshot of ${title}`}
                     width="100%"
                     height="100%"
-                    loading="id === 1 ? 'eager' : 'lazy'"
                     />
                 <div className="overlay">
                     <a href={deployedLink} className="project-title" target="_blank" rel="noopener noreferrer">
