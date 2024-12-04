@@ -1,15 +1,15 @@
 import Project from '../components/Project';
 import './Portfolio.css';
 
-import project1Image from '../assets/dev-demand.png';
-import project2Image from '../assets/finance-flow.png';
-import project3Image from '../assets/car-loan-payment-calculator.png';
-import project4Image from '../assets/james-woodrow-violin.png';
-import project5Image from '../assets/candidate-search.png';
-import project6Image from '../assets/weather-dashboard.png';
-import project7Image from '../assets/keyboard.png';
-import project8Image from '../assets/metronome.png';
-import project9Image from '../assets/employee-tracker.png';
+import project1Image from '../assets/dev-demand.webp';
+import project2Image from '../assets/finance-flow.webp';
+import project3Image from '../assets/car-loan-payment-calculator.webp';
+import project4Image from '../assets/james-woodrow-violin.webp';
+import project5Image from '../assets/candidate-search.webp';
+import project6Image from '../assets/weather-dashboard.webp';
+import project7Image from '../assets/keyboard.webp';
+import project8Image from '../assets/metronome.webp';
+import project9Image from '../assets/employee-tracker.webp';
 // Add more project images as needed
 
 const projects = [
