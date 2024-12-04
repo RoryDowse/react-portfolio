@@ -9,3 +9,5 @@ Disallow: /private/
 # Block all bots from accessing the /admin/ folder
 User-agent: *
 Disallow: /admin/
+
+Sitemap: https://rorydowsedev.com/sitemap.xml
