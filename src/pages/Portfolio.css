@@ -108,7 +108,7 @@
 /* Small screens (mobile phones) */
 @media (max-width: 575px) {
   .portfolio-section {
-    padding: 1.5rem;
+    padding: 2rem;
   }
   .projects-grid {
     grid-template-columns: 1fr;
