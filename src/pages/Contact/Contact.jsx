@@ -66,8 +66,6 @@ export default function Contact() {
         }
     };
 
-    console.log(formData);
-
     return (
         <section className="contact-section">
              <Helmet>
@@ -96,6 +94,8 @@ export default function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur} 
                         className="form-control"
+                        aria-required="true"
+                        aria-describedby="first-name-error"
                     />
                 </div>
 
@@ -110,6 +110,8 @@ export default function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur} 
                         className="form-control"
+                        aria-required="true"
+                        aria-describedby="last-name-error"
                     />
                 </div>
 
@@ -124,6 +126,8 @@ export default function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur} 
                         className="form-control"
+                        aria-required="true"
+                        aria-describedby="telephone-error"
                     />
                 </div>
 
@@ -138,6 +142,8 @@ export default function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur}  
                         className="form-control"
+                        aria-required="true"
+                        aria-describedby="email-error"
                     />
                 </div>
 
@@ -151,20 +157,22 @@ export default function Contact() {
                         onChange={handleChange}
                         onBlur={handleBlur} 
                         className="form-control"
+                        aria-required="true"
+                        aria-describedby="message-error"
                     ></textarea>
                 </div>
 
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary" aria-label="Submit contact form">Submit</button>
                 </div>
 
                 {/* Display validation errors */}
                 <div className="form-errors">
-                    {errors.firstName && <p className="form-error">{errors.firstName}</p>}
-                    {errors.lastName && <p className="form-error">{errors.lastName}</p>}
-                    {errors.telephone && <p className="form-error">{errors.telephone}</p>}
-                    {errors.email && <p className="form-error">{errors.email}</p>}
-                    {errors.message && <p className="form-error">{errors.message}</p>}
+                    {errors.firstName && <p id="first-name-error" className="form-error" role="alert" aria-live="assertive" aria-describedby="first-name-error">{errors.firstName}</p>}
+                    {errors.lastName && <p id="last-name-error" className="form-error" role="alert" aria-live="assertive" aria-describedby="last-name-error">{errors.lastName}</p>}
+                    {errors.telephone && <p id="telephone-error" className="form-error" role="alert" aria-live="assertive" aria-describedby="telephone-error">{errors.telephone}</p>}
+                    {errors.email && <p id="email-error" className="form-error" role="alert" aria-live="assertive" aria-describedby="email-error">{errors.email}</p>}
+                    {errors.message && <p id="message-error" className="form-error" role="alert" aria-live="assertive" aria-describedby="message-error">{errors.message}</p>}
                 </div>
             </form>
         </section>
