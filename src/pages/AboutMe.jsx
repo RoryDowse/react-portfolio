@@ -8,6 +8,7 @@ export default function AboutMe() {
                 src="./assets/rory-dowse-headshot.webp"
                 alt="Rory Dowse"
                 className="about-me-photo"
+                loading="lazy"
                 />
                 <div className="about-me-bio">
                     <h2>About Me</h2>
