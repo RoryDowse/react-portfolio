@@ -81,7 +81,7 @@ const projects = [
 
 export default function Portfolio() {
     return (
-        <section className="portfolio-section">
+        <section className="portfolio-section" aria-labelledby="portfolio-title">
            <h2>Portfolio</h2>
            <div className="projects-grid">
                 {projects.map(project => (

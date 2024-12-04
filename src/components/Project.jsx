@@ -6,12 +6,14 @@ export default function Project({ image, title, deployedLink, githubLink }) {
     return (
         <div className="project-container">
             <div className="project-image">
-                <img src={image} alt={title} />
+                <img src={image} alt={`Screenshot of ${title} project`} />
                 <div className="overlay">
                     <a href={deployedLink} className="project-title" target="_blank" rel="noopener noreferrer">
                         {title}
                     </a>
-                    <a href={githubLink} className="github-link" target="_blank" rel="noopener noreferrer">
+                    <a href={githubLink} className="github-link" target="_blank" rel="noopener noreferrer"
+                    aria-label={`GitHub link for ${title} project`}
+                    >
                     <FontAwesomeIcon icon={faGithub} size="2x" />
                     </a>
                 </div>

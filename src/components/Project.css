@@ -42,7 +42,8 @@
 }
 
 /* Changes the appearance of the project title on hover */
-.project-title:hover {
+.project-title:hover,
+.project-title:focus {
   color: #ffcc00;
   text-decoration: underline;
 }
