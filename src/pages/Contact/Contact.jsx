@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { useState } from 'react';
 import validateForm from './ValidateContactForm.jsx';
 import './Contact.css';
@@ -69,6 +70,10 @@ export default function Contact() {
 
     return (
         <section className="contact-section">
+             <Helmet>
+                <title>Contact | Rory Dowse</title>
+                <meta name="description" content="Contact Rory Dowse today to inquire about opportunities, collaborations, or just to say hello!" />
+            </Helmet>
             <h2>Contact Me</h2>
             <form 
                 onSubmit={handleSubmit} 
