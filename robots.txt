@@ -1,0 +1,11 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow:
+
+# Prevent Googlebot from crawling the /private/ directory
+User-agent: Googlebot
+Disallow: /private/
+
+# Block all bots from accessing the /admin/ folder
+User-agent: *
+Disallow: /admin/
