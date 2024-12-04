@@ -9,15 +9,6 @@
   margin-bottom: 3rem;
 }
 
-/* Title of the resume section */
-.resume h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #333;
-  animation: myAnim 0.5s ease 0s 1 normal forwards;
-}
-
 /* Container for the download section */
 .download-section {
   color: var(--background-color);
