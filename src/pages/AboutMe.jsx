@@ -7,6 +7,21 @@ export default function AboutMe() {
             <Helmet>
                 <title>About Me | Rory Dowse</title>
                 <meta name="description" content="Learn about Rory Dowse, a forward-thinking Software Engineer specializing in the MERN stack. Contact Rory today!" />
+                <script type="application/ld+json">
+                    {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        "name": "Rory Dowse",
+                        "url": "https://rorydowsedev.com",
+                        "jobTitle": "Software Engineer",
+                        "sameAs": [
+                            "https://www.linkedin.com/in/rorydowse",
+                            "https://github.com/rorydowse"
+                        ]
+                    }
+                    `}
+                </script>
             </Helmet>
             <div className="about-me-content">
                 <img

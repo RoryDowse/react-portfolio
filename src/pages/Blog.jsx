@@ -26,6 +26,20 @@ const Blog = () => {
             <Helmet>
                 <title>Blog | Rory Dowse</title>
                 <meta name="description" content="View Rory Dowse's blog posts to learn solutions to challenges encountered in software development." />
+                <script type="application/ld+json">
+                    {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "url": "https://rorydowsedev.com",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "https://rorydowsedev.com/?s={search_term}",
+                            "query-input": "required name=search_term"
+                        }
+                    }
+                    `}
+                </script>
             </Helmet>
             <h2>Blog</h2>
             {posts.length === 0 ? (
