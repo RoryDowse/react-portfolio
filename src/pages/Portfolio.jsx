@@ -1,7 +1,5 @@
-import { Suspense, lazy } from 'react';
+import Project from '../components/Project';
 import './Portfolio.css';
-
-const Project = lazy(() => import('../components/Project'));
 
 import project1Image from '../assets/dev-demand.png';
 import project2Image from '../assets/finance-flow.png';
@@ -86,18 +84,16 @@ export default function Portfolio() {
         <section className="portfolio-section">
            <h2>Portfolio</h2>
            <div className="projects-grid">
-                <Suspense fallback={<div>Loading...</div>}>
-                    {projects.map(project => (
-                        <Project
-                            key={project.id}
-                            image={project.image}
-                            title={project.title}
-                            deployedLink={project.deployedLink}
-                            githubLink={project.githubLink}
-                        />
-                    ))}
-                </Suspense>
-            </div>
+                {projects.map(project => (
+                    <Project
+                        key={project.id}
+                        image={project.image}
+                        title={project.title}
+                        deployedLink={project.deployedLink}
+                        githubLink={project.githubLink}
+                    />
+                ))}
+           </div>
         </section>
     );
 }
