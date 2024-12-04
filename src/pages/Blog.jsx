@@ -24,8 +24,8 @@ const Blog = () => {
     return (
         <div className="blog-page">
             <Helmet>
-                <title>Blog | Rory Dowse</title>
-                <meta name="description" content="View Rory Dowse's blog posts to learn solutions to challenges encountered in software development." />
+                <title>Blog | Rory Dowse | Software Engineer</title>
+                <meta name="description" content="View Rory Dowse's blog posts to find solutions to questions and challenges encountered in software development." />
                 <script type="application/ld+json">
                     {`
                     {
