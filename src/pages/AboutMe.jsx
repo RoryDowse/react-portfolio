@@ -11,7 +11,7 @@ export default function AboutMe() {
             <div className="about-me-content">
                 <img
                 src="./assets/rory-dowse-headshot.webp"
-                alt="Rory Dowse"
+                alt="Headshot of Rory Dowse"
                 className="about-me-photo"
                 />
                 <div className="about-me-bio">
