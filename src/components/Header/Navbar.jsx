@@ -10,9 +10,9 @@ export default function Nav({ links }) {
           </button>
           {/* Collapsible navbar content */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <div className="navbar-nav me-auto mb-2 mb-lg-0 gap-4 custom-nav-list" role="list" aria-label="main navigation">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-4 custom-nav-list">
               {links.map((link) => link)}
-            </div>
+            </ul>
           </div>
         </div>
       </nav>

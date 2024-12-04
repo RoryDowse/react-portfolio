@@ -15,8 +15,7 @@ export default function Nav() {
         style={({ isActive }) => ({
           color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', // Change color based on active state
         })}
-        role="listitem"
-      >
+        >
           About Me
         </NavLink>,
         <NavLink 
@@ -26,7 +25,6 @@ export default function Nav() {
         style={({ isActive }) => ({
           color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
         })}
-        role="listitem"
         >
           Portfolio
         </NavLink>,
@@ -37,7 +35,6 @@ export default function Nav() {
         style={({ isActive }) => ({
           color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
         })}
-        role="listitem"
         >
         Blog
       </NavLink>,
@@ -48,7 +45,6 @@ export default function Nav() {
         style={({ isActive }) => ({
           color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
         })}
-        role="listitem"
         >
         Contact
       </NavLink>,
@@ -59,7 +55,6 @@ export default function Nav() {
         style={({ isActive }) => ({
           color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
         })}
-        role="listitem"
         >
         Resume
       </NavLink>,
