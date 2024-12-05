@@ -10,6 +10,15 @@
   transition: box-shadow 0.3s ease;
 }
 
+/* Styles for the loading message */
+.loading {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 2rem;
+  margin-bottom: 100%;
+}
+
 /* Hover effect on the blog post container */
 .blog-post:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);

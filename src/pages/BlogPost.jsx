@@ -23,7 +23,7 @@ const BlogPost = () => {
         fetchPost(); // Call the fetch function
     }, [slug]); // Add slug as a dependency to re-run the effect on slug change
 
-    if (!post) return <p>Loading...</p>;
+    if (!post) return <p className="loading">Loading...</p>;
 
     return (
         <div className="blog-post">
