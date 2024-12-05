@@ -49,7 +49,7 @@ const Blog = () => {
                     <Link key={post.id} to={`/blog/${post.slug}`} className="blog-card-link">
                         <div className="blog-card">
                             <h3>{post.title}</h3>
-                            <p>{post.intro}</p>
+                            <p>{post.description}</p>
                         </div>
                     </Link>
                 ))

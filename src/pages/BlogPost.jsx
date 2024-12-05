@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './BlogPost.css';
@@ -26,6 +27,10 @@ const BlogPost = () => {
 
     return (
         <div className="blog-post">
+        <Helmet>
+            <title>{post.title} | Rory Dowse | Software Engineer</title>
+            <meta name="description" content={post.description} />
+        </Helmet>
         <h2>{post.title}</h2>
         {post.content.map((block, index) => {
           switch (block.type) {
