@@ -6,7 +6,12 @@ export default function Project({ image, title, deployedLink, githubLink }) {
     return (
         <div className="project-container">
             <div className="project-image">
-                <img src={image} alt={`Screenshot of ${title} project`} />
+                <img 
+                src={image} 
+                alt={`Screenshot of ${title} project`}
+                width="300"
+                height="200"
+                />
                 <div className="overlay">
                     <a href={deployedLink} className="project-title" target="_blank" rel="noopener noreferrer">
                         {title}
