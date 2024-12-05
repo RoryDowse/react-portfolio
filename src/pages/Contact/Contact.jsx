@@ -69,7 +69,7 @@ export default function Contact() {
     return (
         <section className="contact-section">
              <Helmet>
-                <title>Contact | Rory Dowse</title>
+                <title>Contact | Rory Dowse Dev</title>
                 <meta name="description" content="Contact Rory Dowse today to inquire about opportunities, collaborations, or just to say hello!" />
                 <script type="application/ld+json">
                     {`

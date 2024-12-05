@@ -28,7 +28,7 @@ const BlogPost = () => {
     return (
         <div className="blog-post">
         <Helmet>
-            <title>{post.title} | Rory Dowse | Software Engineer</title>
+            <title>{post.title} | Rory Dowse Dev</title>
             <meta name="description" content={post.description} />
         </Helmet>
         <h2>{post.title}</h2>
