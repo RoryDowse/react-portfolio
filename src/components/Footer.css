@@ -1,6 +1,7 @@
 /* Styles for the custom footer, setting the background color to the secondary color from the theme */
 .custom-footer {
   background-color: var(--secondary-color);
+  position: relative;
 }
 
 /* Base styles for social media and email links in the footer */

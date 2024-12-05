@@ -8,38 +8,41 @@ export default function Nav() {
   return (
     <Navbar
       links={[
+        <li key={1}>
+          <NavLink 
+          className="nav-link" 
+          to="/" 
+          style={({ isActive }) => ({
+            color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', // Change color based on active state
+          })}
+          >
+            About Me
+          </NavLink>
+        </li>,
+        <li key={2}>
+          <NavLink 
+          className="nav-link" 
+          to="/portfolio"
+          style={({ isActive }) => ({
+            color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
+          })}
+          >
+            Portfolio
+          </NavLink>
+        </li>,
+        <li key={3}>
+          <NavLink 
+          className="nav-link" 
+          to="/blog"
+          style={({ isActive }) => ({
+            color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
+          })}
+          >
+          Blog
+        </NavLink>
+      </li>,
+      <li key={4}>
         <NavLink 
-        key={1} 
-        className="nav-link" 
-        to="/" 
-        style={({ isActive }) => ({
-          color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', // Change color based on active state
-        })}
-        >
-          About Me
-        </NavLink>,
-        <NavLink 
-        key={2} 
-        className="nav-link" 
-        to="/portfolio"
-        style={({ isActive }) => ({
-          color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
-        })}
-        >
-          Portfolio
-        </NavLink>,
-        <NavLink 
-        key={3} 
-        className="nav-link" 
-        to="/blog"
-        style={({ isActive }) => ({
-          color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
-        })}
-        >
-        Blog
-      </NavLink>,
-        <NavLink 
-        key={4} 
         className="nav-link" 
         to="/contact"
         style={({ isActive }) => ({
@@ -47,17 +50,19 @@ export default function Nav() {
         })}
         >
         Contact
-      </NavLink>,
-      <NavLink 
-        key={5} 
-        className="nav-link" 
-        to="/resume"
-        style={({ isActive }) => ({
-          color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
-        })}
-        >
-        Resume
-      </NavLink>,
+        </NavLink>
+      </li>,
+      <li key={5}>
+        <NavLink 
+          className="nav-link" 
+          to="/resume"
+          style={({ isActive }) => ({
+            color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', 
+          })}
+          >
+          Resume
+        </NavLink>
+      </li>,
       ]}
     />
   );
