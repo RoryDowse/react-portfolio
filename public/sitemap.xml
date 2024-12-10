@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.rorydowsedev.com/</loc>
-        <lastmod>2024-12-10</lastmod> <!-- Adjust date as necessary -->
+        <loc>https://rorydowsedev.com/</loc>
+        <lastmod>2024-12-03</lastmod> <!-- Adjust date as necessary -->
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.rorydowsedev.com/portfolio</loc>
-        <lastmod>2024-12-10</lastmod>
+        <loc>https://rorydowsedev.com/portfolio</loc>
+        <lastmod>2024-12-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.rorydowsedev.com/blog</loc>
-        <lastmod>2024-12-10</lastmod>
+        <loc>https://rorydowsedev.com/blog</loc>
+        <lastmod>2024-12-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.rorydowsedev.com/contact</loc>
-        <lastmod>2024-12-10</lastmod>
+        <loc>https://rorydowsedev.com/contact</loc>
+        <lastmod>2024-12-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.rorydowsedev.com/resume</loc>
-        <lastmod>2024-12-10</lastmod>
+        <loc>https://rorydowsedev.com/resume</loc>
+        <lastmod>2024-12-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <!-- Add individual blog posts here -->
     <url>
-        <loc>https://www.rorydowsedev.com/blog/coding-challenge-break-camelcase-and-immutable-strings</loc>
-        <lastmod>2024-12-10</lastmod>
+        <loc>https://rorydowsedev.com/blog/coding-challenge-break-camelcase-and-immutable-strings</loc>
+        <lastmod>2024-12-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.65</priority>
     </url>

@@ -1,7 +1,0 @@
-# Redirect all http:// traffic to https://www
-http://rorydowsedev.com/*  https://www.rorydowsedev.com/:splat  301!
-
-# Redirect all https://rorydowsedev.com traffic to https://www.rorydowsedev.com
-https://rorydowsedev.com/*  https://www.rorydowsedev.com/:splat  301!
-
-# Ensure no redirection for https://www.rorydowsedev.com

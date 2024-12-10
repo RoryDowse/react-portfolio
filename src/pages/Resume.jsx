@@ -10,7 +10,6 @@ export default function Resume() {
         <section className="resume">
             <Helmet>
                 <title>Resume | Rory Dowse Dev</title>
-                <link rel="canonical" href="https://www.rorydowsedev.com/resume" />
                 <meta name="description" content="Download Rory Dowse's resume and view the skills and proficiencies Rory can bring to your team or project." />
             </Helmet>
             <div className="resume-section">
