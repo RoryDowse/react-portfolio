@@ -51,7 +51,7 @@ export default function Contact() {
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: encode({ "form-name": "portfolio-contact", ...formData })
             })
-                .then(() => alert("Thank you for your message! I will get back to you as soon as possible."))
+                .then(() => alert("Form successfully submitted!"))
                 .catch(error => alert("Error submitting form: " + error));
 
             // Reset form state
