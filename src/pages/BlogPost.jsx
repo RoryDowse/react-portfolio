@@ -29,6 +29,7 @@ const BlogPost = () => {
         <div className="blog-post">
         <Helmet>
             <title>{post.title} | Rory Dowse Dev</title>
+            <link rel="canonical" href="`https://www.rorydowsedev.com/blog/${post.slug}`" />
             <meta name="description" content={post.description} />
         </Helmet>
         <h2>{post.title}</h2>

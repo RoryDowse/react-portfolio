@@ -25,6 +25,7 @@ const Blog = () => {
         <div className="blog-page">
             <Helmet>
                 <title>Blog | Rory Dowse Dev</title>
+                <link rel="canonical" href="https://www.rorydowsedev.com/blog" />
                 <meta name="description" content="View Rory Dowse's blog posts to find solutions to questions and challenges encountered in software development." />
                 <script type="application/ld+json">
                     {`
