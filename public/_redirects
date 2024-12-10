@@ -1,0 +1,8 @@
+# Redirect all HTTP traffic to HTTPS
+
+http://rorydowsedev.com/_ https://rorydowsedev.com/:splat 301!
+http://www.rorydowsedev.com/_ https://rorydowsedev.com/:splat 301!
+
+# Redirect all www traffic to the non-www version
+
+https://www.rorydowsedev.com/* https://rorydowsedev.com/:splat 301!
