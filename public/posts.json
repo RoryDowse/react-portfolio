@@ -73,7 +73,7 @@
       {
         "type": "code",
         "language": "plaintext",
-        "text": "# Redirect HTTP to HTTPS\nhttp://rorydowsedev.com/* https://rorydowsedev.com/:splat 301!"
+        "text": "# Redirect HTTP to HTTPS\nhttp://rorydowsedev.com/* https://rorydowsedev.com/:splat 301!\n\n# Serve the index.html fallback file\n/* /index.html 200"
       },
       {
         "type": "subheading",
