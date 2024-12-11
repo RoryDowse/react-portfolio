@@ -1,6 +1,6 @@
 # Serve the index.html file
 
-/\* /index.html 200
+/* /index.html 200
 
 # Redirect all HTTP traffic to HTTPS
 
