@@ -34,7 +34,7 @@
       },
       {
         "type": "paragraph",
-        "text": "A variety of solutions can mitigate these issues and improve search engine indexing for React applications, including server-side rendering (SSR) with Next.js. Here are some key approaches:"
+        "text": "A variety of solutions can mitigate these issues and improve search engine indexing for React applications, including server-side rendering (SSR) with Next.js.Here are some key approaches:"
       },
       {
         "type": "subheading",
@@ -47,7 +47,7 @@
       {
         "type": "code",
         "language": "html",
-        "text": "<link rel=\"canonical\" href=\"https://www.rorydowsedev.com/contact\" />"
+        "text": "<link rel=\"canonical\" href=\"https://rorydowsedev.com\" />"
       },
       {
         "type": "subheading",
@@ -60,7 +60,7 @@
       {
         "type": "code",
         "language": "javascript",
-        "text": "import { Helmet } from 'react-helmet';\n\n<Helmet>\n  <link rel=\"canonical\" href=\"https://www.rorydowsedev.com/about\" />\n</Helmet>"
+        "text": "import { Helmet } from 'react-helmet';\n\n<Helmet>\n  <link rel=\"canonical\" href=\"https://rorydowsedev.com/contact\" />\n</Helmet>"
       },
       {
         "type": "subheading",
