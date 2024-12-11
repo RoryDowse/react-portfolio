@@ -1,91 +1,200 @@
 [
-    {
-      "id": 1,
-      "title": "Coding Challenge: Break camelCase and Immutable Strings",
-      "slug": "coding-challenge-break-camelcase-and-immutable-strings",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "In the Break camelCase challenge, the developer is tasked to “Complete the solution so that the function will break up camel casing, using a space between words.”"
-        },
-        {
-          "type": "paragraph",
-          "text": "At first glance, the following pseudocode may seem sufficient:"
-        },
-        {
-          "type": "code",
-          "language": "text",
-          "text": "// parse through the string\n// check if the index is equal to toUpperCase\n// if true, insert a space\n// return the string"
-        },
-        {
-          "type": "paragraph",
-          "text": "However, this approach will not work as intended because strings in JavaScript are immutable. This means they cannot be modified in place, and a new string must be created instead."
-        },
-        {
-          "type": "paragraph",
-          "text": "To solve this challenge, the following steps should be followed:"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "Initialize a new empty string",
-            "Perform work on the original string",
-            "Append characters to the new string",
-            "Return the new string"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Since the original string cannot be directly modified, appending changes to a new string ensures the desired result:"
-        },
-        {
-          "type": "code",
-          "language": "javascript",
-          "text": "function solution(string) {\n  // Step 1: Initialize a new empty string\n  let result = \"\";\n\n  // Step 2: Perform work on the original string\n  for (let i = 0; i < string.length; i++) {\n    // Check if the character is uppercase\n    if (string[i] === string[i].toUpperCase() && string[i] !== string[i].toLowerCase()) {\n      // Step 3: Append a space before the uppercase letter\n      result += \" \";\n    }\n    // Append the current character to the result\n    result += string[i];\n  }\n\n  // Step 4: Return the new string\n  return result;\n}"
-        },
-        {
-          "type": "paragraph",
-          "text": "While this solution works well, a simpler and more concise approach using regex can also solve the problem effectively:"
-        },
-        {
-          "type": "code",
-          "language": "javascript",
-          "text": "function solution(string) {\n  return string.replace(/([A-Z])/g, ' $1');\n}"
-        },
-        {
-          "type": "paragraph",
-          "text": "Here's how the regex solution works:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "The uppercase letter is matched using `/([A-Z])/`.",
-            "The group is captured using `()`.",
-            "The replacement happens globally across the string using the `g` flag.",
-            "The uppercase letter is replaced by a space followed by the letter using `' $1'`."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Both methods demonstrate the importance of understanding how strings behave in JavaScript."
-        },
-        {
-          "type": "paragraph",
-          "text": "The key takeaways from this challenge are:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Strings are immutable.",
-            "Changes are appended to a new string.",
-            "Regex can simplify character replacements."
-          ]
-        }
-      ],
-      "description": "Explore the Break camelCase challenge, sharpening problem-solving skills and highlighting the importance of string immutability in JavaScript."
-    }
-  ]
-  
+  {
+    "id": 2,
+    "title": "Solving Indexing Issues in React",
+    "slug": "solving-indexing-issues-in-react",
+    "author": "Rory Dowse",
+    "date": "12-10-2024",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "React offers developers great performance and flexibility through its component-based architecture and virtual DOM. However, its reliance on client-side rendering can create challenges for search engine indexing. This guide explores common indexing issues and practical solutions to optimize React applications for search engines."
+      },
+      {
+        "type": "heading",
+        "text": "Why Indexing Issues Arise in React"
+      },
+      {
+        "type": "paragraph",
+        "text": "React applications dynamically render content using JavaScript, which can delay the content's availability for search engines. This reliance on JavaScript can lead to errors in Google Search Console, including:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Redirect issues",
+          "Duplicate content",
+          "404 errors",
+          "Pages marked as 'Not Indexed'"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Solutions to Improve Indexing in React"
+      },
+      {
+        "type": "paragraph",
+        "text": "A variety of solutions can mitigate these issues and improve search engine indexing for React applications. Here are some key approaches:"
+      },
+      {
+        "type": "subheading",
+        "text": "Add Canonical Tags"
+      },
+      {
+        "type": "paragraph",
+        "text": "Canonical tags help prevent duplication by specifying the preferred URL for each page:"
+      },
+      {
+        "type": "code",
+        "language": "html",
+        "text": "<link rel=\"canonical\" href=\"https://www.rorydowsedev.com/contact\" />"
+      },
+      {
+        "type": "subheading",
+        "text": "Use React Helmet for Dynamic Pages"
+      },
+      {
+        "type": "paragraph",
+        "text": "React Helmet allows you to dynamically add meta tags to individual pages:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "text": "import { Helmet } from 'react-helmet';\n\n<Helmet>\n  <link rel=\"canonical\" href=\"https://www.rorydowsedev.com/about\" />\n</Helmet>"
+      },
+      {
+        "type": "subheading",
+        "text": "Implement Redirects"
+      },
+      {
+        "type": "paragraph",
+        "text": "Redirects help standardize URLs and guide users to the correct versions of your pages. For example, in Netlify, use a `_redirects` file:"
+      },
+      {
+        "type": "code",
+        "language": "plaintext",
+        "text": "# Redirect HTTP to HTTPS\nhttp://rorydowsedev.com/* https://rorydowsedev.com/:splat 301!"
+      },
+      {
+        "type": "subheading",
+        "text": "Test Redirects with curl"
+      },
+      {
+        "type": "paragraph",
+        "text": "You can validate your redirects using the Command Line Interface (CLI):"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "text": "curl -I http://rorydowsedev.com"
+      },
+      {
+        "type": "subheading",
+        "text": "Request Indexing in Google Search Console"
+      },
+      {
+        "type": "paragraph",
+        "text": "Finally, use the URL Inspection Tool in Google Search Console to manually request indexing for pages that are not yet indexed."
+      },
+      {
+        "type": "heading",
+        "text": "Conclusion"
+      },
+      {
+        "type": "paragraph",
+        "text": "Optimizing React applications for search engines requires understanding the nuances of client-side rendering and implementing targeted solutions like canonical tags, redirects, and testing. Using these best practices, you can improve your site's visibility and ensure a seamless user experience."
+      }
+    ],
+    "description": "Explore common indexing issues in React applications and discover practical solutions to optimize for search engines, ensuring better visibility and performance."
+  },
+  {
+    "id": 1,
+    "title": "Coding Challenge: Break camelCase and Immutable Strings",
+    "slug": "coding-challenge-break-camelcase-and-immutable-strings",
+    "author": "Rory Dowse",
+    "date": "12-03-2024",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "In the Break camelCase challenge, the developer is tasked to “Complete the solution so that the function will break up camel casing, using a space between words.”"
+      },
+      {
+        "type": "paragraph",
+        "text": "At first glance, the following pseudocode may seem sufficient:"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "text": "// parse through the string\n// check if the index is equal to toUpperCase\n// if true, insert a space\n// return the string"
+      },
+      {
+        "type": "paragraph",
+        "text": "However, this approach will not work as intended because strings in JavaScript are immutable. This means they cannot be modified in place, and a new string must be created instead."
+      },
+      {
+        "type": "paragraph",
+        "text": "To solve this challenge, the following steps should be followed:"
+      },
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          "Initialize a new empty string",
+          "Perform work on the original string",
+          "Append characters to the new string",
+          "Return the new string"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Since the original string cannot be directly modified, appending changes to a new string ensures the desired result:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "text": "function solution(string) {\n  // Step 1: Initialize a new empty string\n  let result = \"\";\n\n  // Step 2: Perform work on the original string\n  for (let i = 0; i < string.length; i++) {\n    // Check if the character is uppercase\n    if (string[i] === string[i].toUpperCase() && string[i] !== string[i].toLowerCase()) {\n      // Step 3: Append a space before the uppercase letter\n      result += \" \";\n    }\n    // Append the current character to the result\n    result += string[i];\n  }\n\n  // Step 4: Return the new string\n  return result;\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "While this solution works well, a simpler and more concise approach using regex can also solve the problem effectively:"
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "text": "function solution(string) {\n  return string.replace(/([A-Z])/g, ' $1');\n}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's how the regex solution works:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "The uppercase letter is matched using `/([A-Z])/`.",
+          "The group is captured using `()`.",
+          "The replacement happens globally across the string using the `g` flag.",
+          "The uppercase letter is replaced by a space followed by the letter using `' $1'`."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Both methods demonstrate the importance of understanding how strings behave in JavaScript."
+      },
+      {
+        "type": "paragraph",
+        "text": "The key takeaways from this challenge are:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Strings are immutable.",
+          "Changes are appended to a new string.",
+          "Regex can simplify character replacements."
+        ]
+      }
+    ],
+    "description": "Explore the Break camelCase challenge, sharpening problem-solving skills and highlighting the importance of string immutability in JavaScript."
+  }
+]

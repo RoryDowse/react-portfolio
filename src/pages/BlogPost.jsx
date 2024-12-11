@@ -33,8 +33,15 @@ const BlogPost = () => {
             <meta name="description" content={post.description} />
         </Helmet>
         <h2>{post.title}</h2>
+        <div className="post-meta">
+          <span className="post-author">By {post.author}</span> | <span className="post-date">{post.date}</span>
+        </div>
         {post.content.map((block, index) => {
           switch (block.type) {
+            case "heading":
+              return <h3 key={index}>{block.text}</h3>;
+            case "subheading":
+              return <h4 key={index}>{block.text}</h4>;
             case "paragraph":
               return <p key={index}>{block.text}</p>;
             case "code":
