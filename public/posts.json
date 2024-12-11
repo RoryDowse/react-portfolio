@@ -34,7 +34,7 @@
       },
       {
         "type": "paragraph",
-        "text": "A variety of solutions can mitigate these issues and improve search engine indexing for React applications, including server-side rendering (SSR) with Next.js.Here are some key approaches:"
+        "text": "A variety of solutions can mitigate these issues and improve search engine indexing for React applications, including server-side rendering (SSR) with Next.js. Here are some key approaches:"
       },
       {
         "type": "subheading",
