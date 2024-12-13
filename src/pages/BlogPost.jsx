@@ -31,7 +31,24 @@ const BlogPost = () => {
             <title>{post.title} | Rory Dowse Dev</title>
             <link rel="canonical" href={`https://rorydowsedev.com/blog/${post.slug}`} />
             <meta name="description" content={post.description} />
+
+            {/* Open Graph Meta Tags for Social Sharing */}
+            <meta property="og:title" content={`${post.title} | Rory Dowse Dev`} />
+            <meta property="og:description" content={post.description} />
+            <meta property="og:url" content={`https://rorydowsedev.com/blog/${post.slug}`} />
+            <meta property="og:type" content="article" />
+            <meta property="og:image" content={post.image ? `https://rorydowsedev.com${post.image}` : "https://rorydowsedev.com/assets/rory-dowse-headshot.webp"} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            
+            {/* Twitter Card Meta Tags */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={`${post.title} | Rory Dowse Dev`} />
+            <meta name="twitter:description" content={post.description} />
+            <meta name="twitter:url" content={`https://rorydowsedev.com/blog/${post.slug}`} />
+            <meta name="twitter:image" content={post.image ? `https://rorydowsedev.com${post.image}` : "https://rorydowsedev.com/assets/rory-dowse-headshot.webp"} />
         </Helmet>
+
         <h2>{post.title}</h2>
         <div className="post-meta">
           <span className="post-author">By {post.author}</span> | <span className="post-date">{post.date}</span>
