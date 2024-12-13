@@ -47,6 +47,8 @@ const BlogPost = () => {
             <meta name="twitter:description" content={post.description} />
             <meta name="twitter:url" content={`https://rorydowsedev.com/blog/${post.slug}`} />
             <meta name="twitter:image" content={post.image ? `https://rorydowsedev.com${post.image}` : "https://rorydowsedev.com/assets/rory-dowse-headshot.webp"} />
+            <meta name="twitter:image:width" content="1200" />
+            <meta name="twitter:image:height" content="630" />
         </Helmet>
 
         <h2>{post.title}</h2>

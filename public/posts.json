@@ -2,6 +2,7 @@
   {
     "id": 2,
     "title": "Solving Indexing Issues in React",
+    "image": "",
     "slug": "solving-indexing-issues-in-react",
     "author": "Rory Dowse",
     "date": "December 10, 2024",
@@ -110,6 +111,7 @@
   {
     "id": 1,
     "title": "Coding Challenge: Break camelCase and Immutable Strings",
+    "image": "",
     "slug": "coding-challenge-break-camelcase-and-immutable-strings",
     "author": "Rory Dowse",
     "date": "December 3, 2024",
