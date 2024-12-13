@@ -30,17 +30,18 @@ const BlogPost = () => {
         <Helmet>
             <title>{post.title} | Rory Dowse Dev</title>
             <link rel="canonical" href={`https://rorydowsedev.com/blog/${post.slug}`} />
-            <meta name="description" content={post.description} />
 
             {/* Open Graph Meta Tags for Social Sharing */}
-            <meta property="og:title" content={`${post.title} | Rory Dowse Dev`} />
-            <meta property="og:description" content={post.description} />
-            <meta property="og:url" content={`https://rorydowsedev.com/blog/${post.slug}`} />
-            <meta property="og:type" content="article" />
-            <meta property="og:image" content={post.image ? `https://rorydowsedev.com${post.image}` : "https://rorydowsedev.com/assets/rory-dowse-headshot.webp"} />
+            <meta name="title" property="og:title" content={`${post.title} | Rory Dowse Dev`} />
+            <meta name="type" property="og:type" content="article" />
+            <meta name="image" property="og:image" content={post.image ? `https://rorydowsedev.com${post.image}` : "https://rorydowsedev.com/assets/rory-dowse-headshot.webp"} />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
-            
+            <meta name="description" property="og:description" content={post.description} />
+            <meta name="author" content={post.author} />
+            <meta name="date" content={post.date} />
+            <meta name="url" property="og:url" content={`https://rorydowsedev.com/blog/${post.slug}`} />
+
             {/* Twitter Card Meta Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={`${post.title} | Rory Dowse Dev`} />
