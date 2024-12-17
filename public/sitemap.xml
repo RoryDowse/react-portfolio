@@ -34,13 +34,13 @@
     <url>
         <loc>https://rorydowsedev.com/blog/coding-challenge-break-camelcase-and-immutable-strings</loc>
         <lastmod>2024-12-03</lastmod>
-        <changefreq>annually</changefreq>
+        <changefreq>yearly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://rorydowsedev.com/blog/solving-indexing-issues-in-react</loc>
         <lastmod>2024-12-10</lastmod>
-        <changefreq>annually</changefreq>
-        <priority>0.65</changefreq>
+        <changefreq>yearly</changefreq>
+        <priority>0.65</priority>
     </url>
 </urlset>
