@@ -86,7 +86,7 @@ export default function Portfolio() {
             <Helmet>
                 <title>Portfolio | Rory Dowse Dev</title>
                 <link rel="canonical" href="https://rorydowsedev.com/portfolio" />
-                <meta name="description" content="View Rory Dowse's software development portfolio and select the project URL or GitHub repository you'd like to learn more about." />
+                <meta name="description" content="View Rory Dowse's software development portfolio and select the project URL or GitHub repository to learn more." />
             </Helmet>
            <h2>Portfolio</h2>
            <div className="projects-grid">
