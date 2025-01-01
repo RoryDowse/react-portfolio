@@ -1,8 +1,4 @@
-# Allow all search engines to crawl everything
-User-agent: *
-Disallow:
-
-# Prevent Googlebot from crawling the /private/ directory
+# Block Googlebot from crawling the /private/ directory
 User-agent: Googlebot
 Disallow: /private/
 
@@ -10,4 +6,14 @@ Disallow: /private/
 User-agent: *
 Disallow: /admin/
 
+# Prevent crawling of unwanted parameterized URLs
+User-agent: *
+Disallow: /*?s=
+Disallow: /*?trk=
+
+# Allow all other crawling
+User-agent: *
+Disallow:
+
+# Sitemap location
 Sitemap: https://rorydowsedev.com/sitemap.xml
