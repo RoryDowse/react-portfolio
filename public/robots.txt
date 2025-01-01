@@ -11,9 +11,5 @@ User-agent: *
 Disallow: /*?s=
 Disallow: /*?trk=
 
-# Allow all other crawling
-User-agent: *
-Disallow:
-
 # Sitemap location
 Sitemap: https://rorydowsedev.com/sitemap.xml
