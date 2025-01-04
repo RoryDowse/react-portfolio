@@ -6,7 +6,7 @@ const VideoCard = ({ title, description, youtubeId }) => {
             <iframe
                 width="560"
                 height="315"
-                src={`https://www.youtube.com/embed/${youtubeId}`}
+                src={`https://www.youtube.com/embed/${youtubeId}?rel=0&autohide=1&modestbranding=1`}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
