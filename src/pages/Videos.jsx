@@ -44,7 +44,7 @@ const Videos = () => {
             <p>Receive the latest updates:</p>
             <a
                 className="button btn btn-primary"
-                href="https://www.youtube.com/@RoryDowseDev"
+                href="https://www.youtube.com/@RoryDowseDev?sub_confirmation=1"
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label="Subscribe to Rory Dowse's YouTube channel"
