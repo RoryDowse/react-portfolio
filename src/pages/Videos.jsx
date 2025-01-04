@@ -10,24 +10,24 @@ const Videos = () => {
             description: 'A React-powered dictionary app that lets users search words, view meanings, and explore words by starting letter or full list.',
             youtubeId: 'Axu38Iqbnp4',
         },
-        {
-            id: 'video2',
-            title: 'Video 2',
-            description: 'Description for Video 2',
-            youtubeId: '',
-        },
-        {
-            id: 'video3',
-            title: 'Video 3',
-            description: 'Description for Video 3',
-            youtubeId: '',
-        },
-        {
-            id: 'video4',
-            title: 'Video 4',
-            description: 'Description for Video 4',
-            youtubeId: '',
-        },
+        // {
+        //     id: 'video2',
+        //     title: 'Video 2',
+        //     description: 'Description for Video 2',
+        //     youtubeId: '',
+        // },
+        // {
+        //     id: 'video3',
+        //     title: 'Video 3',
+        //     description: 'Description for Video 3',
+        //     youtubeId: '',
+        // },
+        // {
+        //     id: 'video4',
+        //     title: 'Video 4',
+        //     description: 'Description for Video 4',
+        //     youtubeId: '',
+        // },
     ];
 
     return (
