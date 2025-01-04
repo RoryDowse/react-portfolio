@@ -24,8 +24,4 @@
 
 .video-card iframe {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    max-width: 100%;
-    border: none;
 }
