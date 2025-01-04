@@ -11,3 +11,44 @@ h2 {
   color: #333;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
+
+/* Override Bootstrap's .btn-primary styles */
+.btn-primary {
+  background-color: var(--accent-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Optionally, set the hover and focus states to ensure consistency */
+.btn-primary:hover {
+  background-color: #f7f4a8 !important;
+}
+
+.highlight-section {
+  color: var(--background-color);
+  padding: 2rem;
+  background-color: var(--muted-tertiary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  background: linear-gradient(
+    135deg,
+    var(--muted-tertiary-color) 0%,
+    var(--secondary-color) 50%,
+    var(--primary-color) 100%
+  );
+}
+
+.highlight-section h3 {
+  color: white;
+  margin-bottom: 1rem !important;
+}
+
+.highlight-section a {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

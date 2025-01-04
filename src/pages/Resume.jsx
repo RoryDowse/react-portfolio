@@ -17,7 +17,7 @@ export default function Resume() {
                 <h2>Resume</h2>
 
                 {/* Link to downloadable resume */}
-                <div className="download-section">
+                <div className="highlight-section">
                 <h3>Download</h3>
                 <p>My resume:</p>
                 <a

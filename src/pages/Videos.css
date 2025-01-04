@@ -6,6 +6,10 @@
     background-color: var(--background-color);
 }
 
+.videos-section {
+    margin-top: 3rem;
+}
+
 /* Grid container for video cards */
 .videos-grid {
     display: flex;

@@ -38,15 +38,33 @@ const Videos = () => {
                 <meta name="description" content="View Rory Dowse's video and to learn more about Rory's projects." />
             </Helmet>
             <h2>Videos</h2>
-            <div className="videos-grid">
-                {videoData.map((video) => (
-                   <VideoCard
-                        key={video.id}
-                        title={video.title}
-                        description={video.description}
-                        youtubeId={video.youtubeId}
-                    />
-                ))}
+
+            <div className="highlight-section">
+            <h3>Subscribe</h3>
+            <p>Receive the latest updates:</p>
+            <a
+                className="button btn btn-primary"
+                onClick={() => window.open('https://www.youtube.com/@RoryDowseDev?sub_confirmation=1')}
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Subscribe to Rory Dowse's YouTube channel"
+                title="Subscribe to Rory Dowse's YouTube channel"
+            >
+                Subscribe
+            </a>
+            </div>
+            
+            <div className="videos-section">
+                <div className="videos-grid">
+                    {videoData.map((video) => (
+                    <VideoCard
+                            key={video.id}
+                            title={video.title}
+                            description={video.description}
+                            youtubeId={video.youtubeId}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
