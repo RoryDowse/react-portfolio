@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet';
+import VideoCard from '../components/VideoCard';
 import './Videos.css';
 
 const Videos = () => {
@@ -29,25 +31,24 @@ const Videos = () => {
     ];
 
     return (
-        <div className ="videos-page">
+        <section className ="videos-page">
+            <Helmet>
+                <title>Videos | Rory Dowse Dev</title>
+                <link rel="canonical" href="https://rorydowsedev.com/videos" />
+                <meta name="description" content="View Rory Dowse's video and to learn more about Rory's projects." />
+            </Helmet>
             <h2>Videos</h2>
             <div className="videos-grid">
                 {videoData.map((video) => (
-                    <div key={video.id} className="video-card">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src={`https://www.youtube.com/embed/${video.youtubeId}`}
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
-                        <h3>{video.title}</h3>
-                        <p>{video.description}</p>
-                    </div>
+                   <VideoCard
+                        key={video.id}
+                        title={video.title}
+                        description={video.description}
+                        youtubeId={video.youtubeId}
+                    />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
