@@ -9,7 +9,7 @@ const VideoCard = ({ title, description, youtubeId }) => {
                 src={`https://www.youtube.com/embed/${youtubeId}`}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
             ></iframe>
             <h3 className="video-card-title">{title}</h3>
             <p>{description}</p>
