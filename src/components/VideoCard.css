@@ -24,7 +24,6 @@
     flex-grow: 0;
 }
 
-/* Updated iframe styling */
 .video-card iframe {
     width: 100%;
     height: auto;
@@ -77,7 +76,7 @@
 }
 
 .play-button::before {
-    content: '▶'; /* Triangle play icon */
+    content: '▶'; 
     font-size: 24px;
     line-height: 0;
 }
