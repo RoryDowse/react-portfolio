@@ -4,6 +4,7 @@ import './VideoCard.css';
 const VideoCard = ({ title, description, youtubeId }) => {
     const [isPlaying, setIsPlaying] = useState(false);
 
+    // Function to handle video playback for rendering iframe or facade
     const handlePlayVideo = () => {
         setIsPlaying(true);
     };
@@ -11,6 +12,7 @@ const VideoCard = ({ title, description, youtubeId }) => {
     return (
         <div className="video-card">
             {isPlaying ? (
+                // Render the iframe when the video is playing
                 <iframe
                     width="560"
                     height="315"
@@ -20,10 +22,13 @@ const VideoCard = ({ title, description, youtubeId }) => {
                     allowFullScreen
                 ></iframe>
             ) : (
+                // Render the facade when the video is not playing
+                // Allow screen readers to treat the facade as a button
                 <div className="video-facade" onClick={handlePlayVideo} role="button" tabIndex={0} onKeyDown={handlePlayVideo}>
                     <img
                         width="560"
                         height="315"
+                        // Use YouTube's base url, video ID, and high quality thumbnail image
                         src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
                         alt={`Thumbnail for ${title}`}
                         loading="lazy"
