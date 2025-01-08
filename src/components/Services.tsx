@@ -12,11 +12,11 @@ const iconMap = {
 };
 
 const services = [
-    { title: 'Web Design', description: 'Crafting visually stunning and responsive websites.' },
-    { title: 'eCommerce Development', description: 'Building robust online stores to drive sales.' },
-    { title: 'Custom Applications', description: 'Tailored software solutions for unique challenges.' },
+    { title: 'Website Design and Development', description: 'Crafting visually stunning and responsive websites.' },
     { title: 'Search Engine Optimization (SEO)', description: 'Optimizing your site to rank higher on Google.' },
+    { title: 'eCommerce Development', description: 'Building robust online stores to drive sales.' },
     { title: 'Accessibility', description: 'Ensuring your site is inclusive and WCAG-compliant.' },
+    { title: 'Custom Applications', description: 'Tailored software solutions for unique challenges.' },
     { title: 'AI Integration', description: 'Integrating cutting-edge AI capabilities into your website.' },
     { title: 'Web Maintenance', description: 'Keeping your website up to date and optimizing its performance for optimal user experience.' },
 ];
