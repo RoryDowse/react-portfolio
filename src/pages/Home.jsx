@@ -6,6 +6,7 @@ import Packages from "../components/Packages";
 import Inquire from "../components/Inquire";
 import Location from "../components/Location";
 import FAQ from "../components/FAQ";
+import CTA from "../components/CTA";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <Inquire />
             <Location />
             <FAQ />
+            <CTA />
         </>
     );
 }
