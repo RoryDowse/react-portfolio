@@ -1,5 +1,6 @@
 import Welcome from "../components/Welcome";
 import Services from "../components/Services";
+import Employer from "../components/Employeer";
 import Affiliations from "../components/Affiliations";
 import Testimonials from "../components/Testimonials";
 import Packages from "../components/Packages";
@@ -13,9 +14,11 @@ export default function Home() {
         <>
             <Welcome />
             <Services />
+            <Employer />
             <Affiliations />
             <Testimonials />
             <Packages />
+            <h2>Inquire Now</h2>
             <Inquire />
             <Location />
             <FAQ />
