@@ -1,9 +1,10 @@
 export default function FAQ() {
     return (
         <section className="faq">
+          <h2>FAQ</h2>
             <div className="accordion" id="faqAccordion">
               <div className="accordion-item">
-                <h2 className="accordion-header" id="headingOne">
+                <h3 className="accordion-header" id="headingOne">
                   <button
                     className="accordion-button"
                     type="button"
@@ -14,7 +15,7 @@ export default function FAQ() {
                   >
                     What services do you offer?
                   </button>
-                </h2>
+                </h3>
                 <div
                   id="collapseOne"
                   className="accordion-collapse collapse show"
@@ -27,7 +28,7 @@ export default function FAQ() {
                 </div>
               </div>
               <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
+                <h3 className="accordion-header" id="headingTwo">
                   <button
                     className="accordion-button collapsed"
                     type="button"
@@ -38,7 +39,7 @@ export default function FAQ() {
                   >
                     How long does it take to build a website?
                   </button>
-                </h2>
+                </h3>
                 <div
                   id="collapseTwo"
                   className="accordion-collapse collapse"
@@ -51,7 +52,7 @@ export default function FAQ() {
                 </div>
               </div>
               <div className="accordion-item">
-                <h2 className="accordion-header" id="headingThree">
+                <h3 className="accordion-header" id="headingThree">
                   <button
                     className="accordion-button collapsed"
                     type="button"
@@ -62,7 +63,7 @@ export default function FAQ() {
                   >
                     What technologies do you use?
                   </button>
-                </h2>
+                </h3>
                 <div
                   id="collapseThree"
                   className="accordion-collapse collapse"
@@ -75,7 +76,7 @@ export default function FAQ() {
                 </div>
               </div>
               <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFour">
+                <h3 className="accordion-header" id="headingFour">
                   <button
                     className="accordion-button collapsed"
                     type="button"
@@ -86,7 +87,7 @@ export default function FAQ() {
                   >
                     Do you provide ongoing maintenance and support?
                   </button>
-                </h2>
+                </h3>
                 <div
                   id="collapseFour"
                   className="accordion-collapse collapse"
@@ -99,7 +100,7 @@ export default function FAQ() {
                 </div>
               </div>
               <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFive">
+                <h3 className="accordion-header" id="headingFive">
                   <button
                     className="accordion-button collapsed"
                     type="button"
@@ -110,7 +111,7 @@ export default function FAQ() {
                   >
                     How much does a website cost?
                   </button>
-                </h2>
+                </h3>
                 <div
                   id="collapseFive"
                   className="accordion-collapse collapse"
