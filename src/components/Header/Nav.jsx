@@ -16,10 +16,21 @@ export default function Nav() {
             color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', // Change color based on active state
           })}
           >
-            About Me
+            Home
           </NavLink>
         </li>,
         <li key={2}>
+        <NavLink 
+        className="nav-link" 
+        to="/about-me" 
+        style={({ isActive }) => ({
+          color: isActive ? 'var(--tertiary-color)' : 'var(--background-color)', // Change color based on active state
+        })}
+        >
+          About Me
+        </NavLink>
+        </li>,
+        <li key={3}>
           <NavLink 
           className="nav-link" 
           to="/portfolio"
@@ -30,7 +41,7 @@ export default function Nav() {
             Portfolio
           </NavLink>
         </li>,
-        <li key={3}>
+        <li key={4}>
           <NavLink 
           className="nav-link" 
           to="/videos"
@@ -41,7 +52,7 @@ export default function Nav() {
             Videos
           </NavLink>
         </li>,
-        <li key={4}>
+        <li key={5}>
           <NavLink 
           className="nav-link" 
           to="/blog"
@@ -52,7 +63,7 @@ export default function Nav() {
           Blog
         </NavLink>
       </li>,
-      <li key={5}>
+      <li key={6}>
         <NavLink 
         className="nav-link" 
         to="/contact"
@@ -63,7 +74,7 @@ export default function Nav() {
         Contact
         </NavLink>
       </li>,
-      <li key={6}>
+      <li key={7}>
         <NavLink 
           className="nav-link" 
           to="/resume"
