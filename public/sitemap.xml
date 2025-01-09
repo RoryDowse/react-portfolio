@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://rorydowsedev.com/</loc>
-        <lastmod>2024-12-03</lastmod> <!-- Adjust date as necessary -->
+        <lastmod>2025-01-10</lastmod> <!-- Adjust date as necessary -->
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://rorydowsedev.com/about-me</loc>
+        <lastmod>2025-01-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,9 +18,9 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-      <url>
+    <url>
         <loc>https://rorydowsedev.com/videos</loc>
-        <lastmod>2025-04-01</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
