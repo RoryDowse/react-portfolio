@@ -233,7 +233,7 @@ export default function FAQ() {
                         data-bs-parent="#faqAccordion"
                     >
                         <div className="accordion-body">
-                            AI integration enhances business processes by automating tasks and improving decision-making. It complements human efforts and is not a threat when used responsibly.
+                            AI integration enhances business processes by automating tasks and improving decision-making. It complements human efforts and is not likely to take over the world any time soon.
                         </div>
                     </div>
                 </div>

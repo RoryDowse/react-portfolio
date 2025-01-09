@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import Inquire from '../../components/Inquire';
+import Inquire from '../components/Inquire';
 import './Contact.css';
 
 export default function Contact() {

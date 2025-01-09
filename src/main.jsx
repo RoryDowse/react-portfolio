@@ -15,7 +15,7 @@ import Portfolio from './pages/Portfolio';
 import Videos from './pages/Videos';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
-import Contact from './pages/Contact/Contact';
+import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 // Define the accessible routes, and which components respond to which URL

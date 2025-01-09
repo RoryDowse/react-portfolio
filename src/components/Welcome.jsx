@@ -5,7 +5,7 @@ export default function Welcome() {
             <img src="/assets/rory-dowse-headshot.webp" alt="Rory Dowse" />
             <p>Rory Dowse, Software Engineer</p>
             <h3>Web Developer in Deer Valley, Phoenix, AZ</h3>
-            <p>Expert Web Development and SEO Services Tailored to Your Business Needs</p>
+            <p>Expert Website Development and SEO Services Tailored to Your Business Needs</p>
             <p>Get your free consultation today:</p>
             <button onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}>
             Inquire Now
