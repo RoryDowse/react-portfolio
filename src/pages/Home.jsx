@@ -1,4 +1,4 @@
-import Welcome from "../components/Welcome";
+import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Employer from "../components/Employeer";
 import Affiliations from "../components/Affiliations";
@@ -12,7 +12,7 @@ import CTA from "../components/CTA";
 export default function Home() {
     return (
         <>
-            <Welcome />
+            <Hero />
             <Services />
             <Employer />
             <Affiliations />

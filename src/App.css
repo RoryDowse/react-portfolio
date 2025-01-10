@@ -21,6 +21,7 @@ h2 {
 /* Optionally, set the hover and focus states to ensure consistency */
 .btn-primary:hover {
   background-color: #f7f4a8 !important;
+  transform: scale(1.05) !important;
 }
 
 .highlight-section {

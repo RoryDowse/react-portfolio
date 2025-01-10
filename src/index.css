@@ -18,6 +18,8 @@
   --tertiary-color: #cee4ce;
   --muted-tertiary-color: #395d2d;
   --accent-color: #fbde65;
+    background-color: #fbde65;
+  --button-hover: #fbde65;
   --background-color: #ecf0f1;
   --link-color: #ecf0f1;
   --text-color: black;
