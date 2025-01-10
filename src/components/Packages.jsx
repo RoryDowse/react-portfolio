@@ -2,14 +2,14 @@ import './Packages.css';
 
 const packages = [
     {
-      name: "Starter Package",
-      description: "Perfect for small businesses and personal projects.",
+      name: "Enterprise Package",
+      description: "Tailored solutions for large-scale projects.",
       features: [
-        "Custom 5-page website",
-        "Responsive design",
-        "Basic SEO optimization",
+        "Unlimited pages",
+        "Custom applications",
+        "AI integration",
       ],
-      cta: "Contact us to get started:",
+      cta: "Let's discuss your needs:",
     },
     {
       name: "Professional Package",
@@ -22,14 +22,14 @@ const packages = [
       cta: "Upgrade your business today:",
     },
     {
-      name: "Enterprise Package",
-      description: "Tailored solutions for large-scale projects.",
+      name: "Starter Package",
+      description: "Perfect for small businesses and personal projects.",
       features: [
-        "Unlimited pages",
-        "Custom applications",
-        "AI integration",
+        "Custom 5-page website",
+        "Responsive design",
+        "Basic SEO optimization",
       ],
-      cta: "Let's discuss your needs:",
+      cta: "Contact us to get started:",
     },
   ];
   
