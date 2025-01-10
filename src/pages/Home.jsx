@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
-import Employer from "../components/Employeer";
+import Employer from "../components/Employer";
 import Affiliations from "../components/Affiliations";
 import Testimonials from "../components/Testimonials";
 import Packages from "../components/Packages";

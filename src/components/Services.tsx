@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLaptopCode, FaShoppingCart, FaTools, FaSearch, FaUniversalAccess, FaRobot, FaWrench } from 'react-icons/fa';
+import './Services.css';
 
 const iconMap = {
     'Website Design and Development': <FaLaptopCode />,
@@ -14,7 +15,7 @@ const iconMap = {
 const services = [
     { title: 'Website Design and Development', description: 'Crafting visually stunning and responsive websites across all devices.' },
     { title: 'Search Engine Optimization (SEO)', description: 'Optimizing your site to rank higher on Google.' },
-    { title: 'eCommerce Business', description: 'Building robust online stores to drive sales.' },
+    { title: 'eCommerce Business', description: 'Building robust online stores to drive sales and grow your business.' },
     { title: 'Website Accessibility', description: 'Ensuring your site is usable by people with disabilities and meets WCAG standards.' },
     { title: 'Web Applications', description: 'Tailored software solutions for unique challenges.' },
     { title: 'AI Integration', description: 'Integrating cutting-edge AI capabilities into your website.' },
@@ -24,7 +25,7 @@ const services = [
 export default function Services() {
   return (
     <section className="services">
-        <h2>Our Services</h2>
+        <h2>Services</h2>
         <div className="services-container">
         {services.map((service, index) => (
             <div key={index} className="service">

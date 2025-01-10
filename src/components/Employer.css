@@ -1,0 +1,30 @@
+/* Custom Styles */
+.prospective-employer {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prospective-employer h2 {
+    color: var(--primary-color);
+  }
+  
+  .prospective-employer .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .prospective-employer .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .prospective-employer a {
+    color: var(--accent-color);
+  }
+  
+  .prospective-employer a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  

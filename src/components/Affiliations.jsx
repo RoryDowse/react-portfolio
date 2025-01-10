@@ -1,4 +1,5 @@
-import React from "react";
+import './Affiliations.css';
+
 const affiliations = [
     {
       name: "Arizona State University",

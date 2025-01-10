@@ -1,3 +1,5 @@
+import './Testimonials.css';
+
 const testimonials = [
     {
       name: "James Woodrow",

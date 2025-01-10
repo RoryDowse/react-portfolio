@@ -1,0 +1,76 @@
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensures proper vertical layout */
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* Individual Service Card */
+.service {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service .icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--background-color);
+}
+
+.service p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--background-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services {
+        padding: 2rem 1rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .service {
+        padding: 1.5rem;
+    }
+
+    .service h3 {
+        font-size: 1.25rem;
+    }
+
+    .service p {
+        font-size: 0.9rem;
+    }
+}

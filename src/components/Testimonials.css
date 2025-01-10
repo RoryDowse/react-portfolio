@@ -1,0 +1,122 @@
+/* Testimonials Section */
+.testimonials {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f0f0f0, #dfe8f0);
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Testimonials Container */
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Individual Testimonial Card */
+  .testimonial {
+    position: relative;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: perspective(800px) rotateY(5deg);
+    z-index: 1;
+  }
+  
+  .testimonial:hover {
+    transform: perspective(800px) rotateY(0deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image with Overlap and Cut-Out */
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  }
+  
+  /* Name & Role */
+  .testimonial h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 70px;
+  }
+  
+  .testimonial p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    line-height: 1.8;
+    font-style: italic;
+  }
+  
+  /* Feedback Styling */
+  .testimonial p:last-child {
+    font-size: 1.1rem;
+    color: var(--muted-tertiary-color);
+    margin-top: 1rem;
+  }
+  
+  /* Animation for the testimonials */
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Adding animation to each testimonial */
+  .testimonial:nth-child(odd) {
+    animation: slideInUp 1s ease-out;
+  }
+  
+  .testimonial:nth-child(even) {
+    animation: slideInUp 1.2s ease-out;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .testimonials h2 {
+      font-size: 2.2rem;
+    }
+  
+    .testimonial {
+      padding: 2rem;
+    }
+  
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      top: -40px;
+    }
+  
+    .testimonial h3 {
+      font-size: 1.2rem;
+    }
+  
+    .testimonial p {
+      font-size: 1rem;
+    }
+  }
+  
