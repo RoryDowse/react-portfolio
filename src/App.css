@@ -2,6 +2,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  background-color: var(--background-color);
 }
 
 h2 {
@@ -22,6 +23,12 @@ h2 {
 .btn-primary:hover {
   background-color: #f7f4a8 !important;
   transform: scale(1.05) !important;
+}
+
+.btn-secondary {
+  background-color: black !important;
+  color: white !important;
+  margin-bottom: 0 !important; 
 }
 
 .highlight-section {

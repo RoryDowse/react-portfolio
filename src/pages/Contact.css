@@ -58,17 +58,6 @@
   transition: background-color 0.3s ease;
 }
 
-/* Override Bootstrap's .btn-primary styles */
-.btn-primary {
-  background-color: var(--accent-color) !important;
-  color: var(--text-color) !important;
-}
-
-/* Hover effect for the primary button */
-.btn-primary:hover {
-  background-color: #f7f4a8 !important;
-}
-
 /* Styles for form errors */
 .form-errors p {
   color: var(--background-color) !important;
