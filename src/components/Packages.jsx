@@ -1,3 +1,5 @@
+import './Packages.css';
+
 const packages = [
     {
       name: "Starter Package",
@@ -7,7 +9,7 @@ const packages = [
         "Responsive design",
         "Basic SEO optimization",
       ],
-      cta: "Contact us to get started",
+      cta: "Contact us to get started:",
     },
     {
       name: "Professional Package",
@@ -17,7 +19,7 @@ const packages = [
         "Advanced SEO optimization",
         "eCommerce integration",
       ],
-      cta: "Upgrade your business today",
+      cta: "Upgrade your business today:",
     },
     {
       name: "Enterprise Package",
@@ -27,7 +29,7 @@ const packages = [
         "Custom applications",
         "AI integration",
       ],
-      cta: "Let's discuss your needs",
+      cta: "Let's discuss your needs:",
     },
   ];
   

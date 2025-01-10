@@ -1,0 +1,112 @@
+/* General Styles for the Packages Section */
+.packages {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f8f8f8, #f0f4f7);
+    text-align: center;
+  }
+  
+  .packages h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Package Container (Grid Layout) */
+  .packages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  /* Individual Package Styling */
+  .package {
+    background-color: var(--background-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .package:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+  }
+  
+  .package h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .package p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .package ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .package li {
+    font-size: 1rem;
+    color: var(--muted-tertiary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Call to Action (CTA) Styling */
+  .package button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .package button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .packages h2 {
+      font-size: 2.5rem;
+    }
+  
+    .package {
+      padding: 1.5rem;
+    }
+  
+    .package h3 {
+      font-size: 1.5rem;
+    }
+  
+    .package p {
+      font-size: 1rem;
+    }
+  
+    .package ul li {
+      font-size: 0.9rem;
+    }
+  
+    .package button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
