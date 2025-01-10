@@ -1,6 +1,8 @@
+import './Location.css';
+
 export default function Location() {
   const address = "Deer Valley, Phoenix, AZ 85027";
-  const closeTo = "Deer Valley and 31st Ave";
+  const closeTo = "Deer Valley and 31st Ave.";
 
   return (
     <section className="map-page">
