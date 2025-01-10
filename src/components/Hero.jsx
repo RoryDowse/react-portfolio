@@ -14,7 +14,7 @@ export default function Hero() {
                 <h3 className="hero-tagline text-muted">
                     Website Design and SEO Services Tailored to Your Business Needs
                 </h3>
-                <p className="hero-text">Get your free consultation today:</p>
+                <p className="hero-text">Get your initial consultation today:</p>
                 <button
                     className="btn btn-primary btn-lg"
                     onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}

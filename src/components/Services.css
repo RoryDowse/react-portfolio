@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Ensures proper vertical layout */
+    flex-direction: column;
     width: 100%;
     padding: 4rem 2rem;
     background-color: var(--background-color);
@@ -14,7 +14,7 @@
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
     justify-items: center;
 }
@@ -22,6 +22,7 @@
 /* Individual Service Card */
 .service {
     background-color: var(--secondary-color);
+    opacity: 0.8;
     color: var(--background-color);
     padding: 2rem;
     border-radius: 10px;
@@ -29,8 +30,21 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.service:nth-child(odd) {
+    transform: perspective(300px) rotateY(10deg);
+}
+
+.service:nth-child(even) {
+    transform: perspective(300px) rotateY(-10deg);
+}
+
 .service:hover {
-    transform: translateY(-5px);
+    transform: perspective(800px) rotateY(0deg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service.hovered {
+    transform: perspective(800px) rotateY(0deg);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 

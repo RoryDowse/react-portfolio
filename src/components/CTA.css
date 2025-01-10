@@ -1,0 +1,60 @@
+/* General CTA Section */
+.cta {
+    background-color: #17486c; /* primary color */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  .cta h2 {
+    color: var(--accent-color);
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta button {
+    background-color: #fbde65; /* accent color */
+    color: #17486c; /* primary color */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta button:hover {
+    background-color: #738348; /* secondary color */
+    color: #ecf0f1; /* background color */
+    transform: translateY(-2px); /* Slight hover effect */
+  }
+  
+  .cta button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fbde65; /* accent color outline for accessibility */
+  }
+  
+  @media (max-width: 768px) {
+    .cta h2 {
+      font-size: 2rem;
+    }
+  
+    .cta p {
+      font-size: 1rem;
+    }
+  
+    .cta button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

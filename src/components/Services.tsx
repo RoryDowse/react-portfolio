@@ -1,9 +1,10 @@
 import React from 'react';
-import { FaLaptopCode, FaShoppingCart, FaTools, FaSearch, FaUniversalAccess, FaRobot, FaWrench } from 'react-icons/fa';
+import { FaPaintBrush, FaLaptopCode, FaShoppingCart, FaTools, FaSearch, FaUniversalAccess, FaRobot, FaWrench } from 'react-icons/fa';
 import './Services.css';
 
 const iconMap = {
-    'Website Design and Development': <FaLaptopCode />,
+    'Website Design': <FaPaintBrush />,
+    'Website Development': <FaLaptopCode />,
     'Search Engine Optimization (SEO)': <FaSearch />,
     'eCommerce Business': <FaShoppingCart />,
     'Website Accessibility': <FaUniversalAccess />,
@@ -13,7 +14,9 @@ const iconMap = {
 };
 
 const services = [
-    { title: 'Website Design and Development', description: 'Crafting visually stunning and responsive websites across all devices.' },
+    
+    { title: 'Website Design', description: 'Crafting visually stunning and responsive websites across all devices.' },
+    { title: 'Website Development', description: 'Building robust and secure websites using the latest web technologies.' },
     { title: 'Search Engine Optimization (SEO)', description: 'Optimizing your site to rank higher on Google.' },
     { title: 'eCommerce Business', description: 'Building robust online stores to drive sales and grow your business.' },
     { title: 'Website Accessibility', description: 'Ensuring your site is usable by people with disabilities and meets WCAG standards.' },
