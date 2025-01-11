@@ -1,6 +1,6 @@
 /* General CTA Section */
 .cta {
-    background-color: #17486c; /* primary color */
+    background-color: var(--primary-color); /* primary color */
     color: #fff;
     text-align: center;
     padding: 50px 20px;
@@ -9,7 +9,9 @@
   }
   
   .cta h2 {
+    font-size: 3rem;
     color: var(--accent-color);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
   }
   
   .cta p {
@@ -21,8 +23,8 @@
   }
   
   .cta button {
-    background-color: #fbde65; /* accent color */
-    color: #17486c; /* primary color */
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     font-size: 1.1rem;
     font-weight: 500;
     padding: 12px 25px;
@@ -30,31 +32,32 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
   }
   
   .cta button:hover {
-    background-color: #738348; /* secondary color */
-    color: #ecf0f1; /* background color */
-    transform: translateY(-2px); /* Slight hover effect */
+    background-color: var(--muted-tertiary-color);
+    color: #ecf0f1;
+    transform: translateY(-2px);
   }
   
   .cta button:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #fbde65; /* accent color outline for accessibility */
+    box-shadow: 0 0 0 2px var(--accent-color);
   }
   
   @media (max-width: 768px) {
+    .cta {
+      margin: 30px;
+    }
     .cta h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   
     .cta p {
-      font-size: 1rem;
-    }
-  
-    .cta button {
-      font-size: 1rem;
-      padding: 10px 20px;
+      font-size: 1.1rem;
+      padding: 0 10px;
+      margin-bottom: 40px;
     }
   }
   
