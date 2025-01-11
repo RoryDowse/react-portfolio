@@ -4,6 +4,12 @@
   margin-top: 50px;
 }
 
+/* FAQ Container */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .accordion-button {
   background-color: white;
   color: var(--primary-color);

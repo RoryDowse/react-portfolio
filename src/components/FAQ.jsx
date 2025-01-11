@@ -3,7 +3,7 @@ export default function FAQ() {
     return (
         <section className="faq">
             <h2>FAQ</h2>
-            <div className="accordion" id="faqAccordion">
+            <div className="accordion">
 
                 {/* Question 1 */}
                 <div className="accordion-item">
