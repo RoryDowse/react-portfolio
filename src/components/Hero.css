@@ -50,6 +50,7 @@
   font-weight: 500;
   margin-bottom: 3rem;
   color: var(--accent-color);
+  animation: none;
 }
 
 .hero-tagline {
@@ -79,16 +80,45 @@
     height: auto;
   }
 
+  .about-me-photo {
+    animation: fade-in 1.0s ease-in forwards;
+  }
+
   .hero-title {
     font-size: 3rem;
+    white-space: normal;
+    border-right: none;
+    width: auto;
+    animation: none;
+    opacity: 0;
+    animation: fade-in 1.1s ease-in forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .hero-subtitle {
     font-size: 1.8rem;
     font-weight: 300;
+    animation: fade-in 1.2s ease-in forwards;
+  }
+
+  .hero-tagline {
+    animation: fade-in 1.3s ease-in forwards;
+  }
+
+  .hero-text {
+    animation: fade-in 1.4s ease-in forwards;
   }
 
   .btn {
+    animation: fade-in 1.5s ease-in forwards;
     font-size: 1rem;
   }
 }

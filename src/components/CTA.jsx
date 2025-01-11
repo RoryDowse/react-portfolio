@@ -5,7 +5,7 @@ export default function CTA() {
         <section className="cta">
             <h2>Ready to Get Started?</h2>
             <p>Discover Rory Dowse Web Development and take your online presence to the next level:</p>
-            <button onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}>Inquire Now</button>
+            <button className="btn-pulse"onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}>Inquire Now</button>
         </section>
     );
 }
