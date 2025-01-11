@@ -47,14 +47,14 @@
 
 /* Name & Role */
 .testimonial h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--primary-color);
   font-weight: 700;
   margin-top: 50px;
 }
 
 .role {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -63,14 +63,14 @@
 }
 
 .company {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--secondary-color);
   line-height: 1.8;
 }
 
 /* Feedback Styling */
-.testimonial p:last-child {
-  font-size: 1.1rem;
+.feedback {
+  font-size: 1.2rem;
   color: black;
   margin-top: 1rem;
 }

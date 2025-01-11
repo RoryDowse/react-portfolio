@@ -17,10 +17,10 @@ const services = [
     
     { title: 'Website Design', description: 'Crafting visually stunning and responsive websites across all devices.' },
     { title: 'Website Development', description: 'Building robust and secure websites using the latest web technologies.' },
-    { title: 'Search Engine Optimization (SEO)', description: 'Optimizing your site to rank higher on Google.' },
+    { title: 'Search Engine Optimization (SEO)', description: 'Optimizing your site to rank on top on Google.' },
     { title: 'eCommerce Business', description: 'Building robust online stores to drive sales and grow your business.' },
-    { title: 'Website Accessibility', description: 'Ensuring your site is usable by people with disabilities and meets WCAG standards.' },
-    { title: 'Web Applications', description: 'Tailored software solutions for unique challenges.' },
+    { title: 'Website Accessibility', description: 'Ensuring your site can be used by people with disabilities and meets WCAG standards.' },
+    { title: 'Web Applications', description: 'Tailored software solutions that solve unique challenges.' },
     { title: 'AI Integration', description: 'Integrating cutting-edge AI capabilities into your website.' },
     { title: 'Web Maintenance', description: 'Keeping your website up to date and optimizing its performance for optimal user experience.' },
 ];

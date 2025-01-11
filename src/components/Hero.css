@@ -8,6 +8,7 @@
   justify-content: center;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 /* Title and Subtitle */
@@ -43,6 +44,7 @@
   width: 0; /* Initial width */
   animation: typing 2s steps(30, end), blink 0.75s step-end infinite; /* Typing + blinking cursor */
   animation-fill-mode: forwards; /* Ensures the final state of the animation persists */
+  height: 10%;
 }
 
 .hero-subtitle {

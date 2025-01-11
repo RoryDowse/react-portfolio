@@ -1,7 +1,7 @@
 /* Styles for the contact section, including padding and background color */
 .contact-section {
-  padding: 2rem;
   background-color: var(--background-color);
+  padding: 0 0 4rem 0;
 }
 
 /* Styles for the contact form container */
@@ -11,7 +11,6 @@
   margin: 0 auto;
   padding: 1.5rem 2rem 0.5rem 2rem;
   border-radius: 1.5rem;
-  box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
   animation: myAnim 0.75s ease 0s 1 normal forwards;
   background: linear-gradient(
     135deg,

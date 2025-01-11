@@ -21,6 +21,7 @@
   padding: 2rem;
   transition: all 0.3s ease;
   border: 1px solid #e1e1e1;
+  min-height: 100%;
 }
 
 .package:nth-child(1) {
@@ -160,14 +161,13 @@
 }
 
 .package button:hover {
-  background-color: var(--secondary-color);
   transform: scale(1.05);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .packages {
-    padding: 1.5rem;
+    padding: 4rem 1rem;
   }
   .package h3 {
     font-size: 2.5rem;

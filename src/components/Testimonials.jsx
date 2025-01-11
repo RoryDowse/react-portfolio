@@ -36,7 +36,7 @@ const testimonials = [
               <h3>{testimonial.name}</h3>
               <p className="role">{testimonial.role}</p>
               <p className="company">{testimonial.company}</p>
-              <p className="text-muted">
+              <p className="text-muted feedback">
               <span className="opening-quote">&#8220;</span>
                 {testimonial.feedback}</p>
                 <br />

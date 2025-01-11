@@ -4,7 +4,9 @@ export default function Inquire() {
     return (
         <section className="inquire-section">
         <h2>Inquire Now</h2>
+        <div className="inquire-container">
         <ContactForm />
+        </div>
         </section>
     )
 }

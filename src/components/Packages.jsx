@@ -3,7 +3,7 @@ import './Packages.css';
 const packages = [
     {
       name: "Enterprise",
-      description: "Tailored solutions for large-scale projects.",
+      description: "Tailored solutions for large-scale projects, including databases and web applications.",
       features: [
         "Unlimited pages",
         "Custom applications",
@@ -13,7 +13,7 @@ const packages = [
     },
     {
       name: "Professional",
-      description: "Ideal for growing businesses needing advanced features.",
+      description: "Ideal for growing businesses needing specific features and essential discoverability.",
       features: [
         "Custom 10-page website",
         "Advanced SEO optimization",
@@ -25,7 +25,7 @@ const packages = [
       name: "Starter",
       description: "Perfect for small businesses and personal projects.",
       features: [
-        "Custom 5-page website",
+        "Custom 3-page website",
         "Responsive design",
         "Basic SEO optimization",
       ],

@@ -2,7 +2,7 @@ import './FAQ.css';
 export default function FAQ() {
     return (
         <section className="faq">
-            <h2>FAQ</h2>
+            <h2>FAQs</h2>
             <div className="accordion">
 
                 {/* Question 1 */}
