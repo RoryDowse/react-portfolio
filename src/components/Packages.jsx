@@ -2,7 +2,7 @@ import './Packages.css';
 
 const packages = [
     {
-      name: "Enterprise Package",
+      name: "Enterprise",
       description: "Tailored solutions for large-scale projects.",
       features: [
         "Unlimited pages",
@@ -12,7 +12,7 @@ const packages = [
       cta: "Let's discuss your needs:",
     },
     {
-      name: "Professional Package",
+      name: "Professional",
       description: "Ideal for growing businesses needing advanced features.",
       features: [
         "Custom 10-page website",
@@ -22,7 +22,7 @@ const packages = [
       cta: "Upgrade your business today:",
     },
     {
-      name: "Starter Package",
+      name: "Starter",
       description: "Perfect for small businesses and personal projects.",
       features: [
         "Custom 5-page website",

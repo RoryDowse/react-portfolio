@@ -3,107 +3,129 @@
     padding: 5rem 2rem;
     background: linear-gradient(135deg, #f0f0f0, #dfe8f0);
     text-align: center;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Testimonial Card */
+.testimonial {
+  position: relative;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  transform: perspective(800px) rotateY(5deg);
+  z-index: 1;
+}
+
+.testimonial:hover {
+  transform: perspective(800px) rotateY(0deg);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.testimonial img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 0 0; 
+}
+
+/* Name & Role */
+.testimonial h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.role {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  line-height: 1.8;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  line-height: 1.8;
+}
+
+/* Feedback Styling */
+.testimonial p:last-child {
+  font-size: 1.1rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+.opening-quote {
+  font-size: 3rem;
+  color: var(--primary-color); 
+  position: absolute;
+  top: 20px;
+  transform: rotate(-30deg); /* Slight rotation to make it look more dynamic */
+}
+
+.closing-quote {
+  font-size: 3rem;
+  color: var(--primary-color); 
+  position: absolute;
+  bottom: 10px;
+  right: 60px;
+  transform: rotate(-30deg);
+}
+
+/* Animation for the testimonials */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  /* Testimonials Container */
-  .testimonials-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Individual Testimonial Card */
-  .testimonial {
-    position: relative;
-    background-color: var(--background-color);
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 3rem;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    transform: perspective(800px) rotateY(5deg);
-    z-index: 1;
-  }
-  
-  .testimonial:hover {
-    transform: perspective(800px) rotateY(0deg);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Image */
-  .testimonial img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: 0 0; 
-  }
-  
-  /* Name & Role */
-  .testimonial h3 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    font-weight: 700;
-    margin-top: 50px;
-  }
-  
-  .role {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--secondary-color);
-    line-height: 1.8;
+}
+
+/* Adding animation to each testimonial */
+.testimonial:nth-child(odd) {
+  animation: slideInUp 1s ease-out;
+}
+
+.testimonial:nth-child(even) {
+  animation: slideInUp 1.2s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonials h2 {
+    font-size: 2.2rem;
   }
 
-  .company {
-    font-size: 1.1rem;
-    color: var(--secondary-color);
-    line-height: 1.8;
+  .testimonial {
+    padding: 2rem;
   }
-  
-  /* Feedback Styling */
-  .testimonial p:last-child {
-    font-size: 1.1rem;
-    color: black;
-    margin-top: 1rem;
+
+  .testimonial img {
+    top: -40px;
   }
-  
-  /* Animation for the testimonials */
-  @keyframes slideInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  .closing-quote {
+    bottom: 0;
+    right: 30px;
   }
-  
-  /* Adding animation to each testimonial */
-  .testimonial:nth-child(odd) {
-    animation: slideInUp 1s ease-out;
-  }
-  
-  .testimonial:nth-child(even) {
-    animation: slideInUp 1.2s ease-out;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .testimonials h2 {
-      font-size: 2.2rem;
-    }
-  
-    .testimonial {
-      padding: 2rem;
-    }
-  
-    .testimonial img {
-      top: -40px;
-    }
-  }
+}
   
