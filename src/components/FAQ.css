@@ -60,6 +60,7 @@
     padding: 20px;
   }
 
+  /* Remove the arrow icon */
   .accordion-button::after {
     display: none;
   }

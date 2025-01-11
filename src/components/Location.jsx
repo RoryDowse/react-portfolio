@@ -7,7 +7,7 @@ export default function Location() {
   return (
     <section className="map-page">
       <h2>Location</h2>
-      <p>We are based in:</p>
+      <p>We are located in:</p>
       <p className="address">{address}</p>
       <p>Just off {closeTo}</p>
       <div className="map-container">

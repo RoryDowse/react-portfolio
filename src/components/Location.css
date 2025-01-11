@@ -1,6 +1,5 @@
 /* Location Section Styling */
 .map-page {
-    padding: 3rem 2rem;
     text-align: center;
   }
   
@@ -8,6 +7,7 @@
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    color: #555;
   }
   
   /* Address Styling */
@@ -16,14 +16,14 @@
     font-weight: 700;
     margin: 1rem 0;
     text-align: center;
+    color: var(--primary-color) !important;
+    letter-spacing: 1px;
   }
   
   /* Map Container Styling */
   .map-container {
     margin-top: 2rem;
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
   iframe {
