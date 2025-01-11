@@ -1,4 +1,4 @@
-
+import './FAQ.css';
 export default function FAQ() {
     return (
         <section className="faq">
@@ -156,7 +156,7 @@ export default function FAQ() {
                         data-bs-parent="#faqAccordion"
                     >
                         <div className="accordion-body">
-                            SEO improves your website's visibility on search engines, driving organic traffic and increasing customer engagement. I implement best practices to ensure your site ranks well.
+                            SEO improves your website&#39;s visibility on search engines, driving organic traffic and increasing customer engagement. I implement best practices to ensure your site ranks well.
                         </div>
                     </div>
                 </div>
