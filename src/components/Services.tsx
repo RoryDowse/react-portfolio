@@ -27,7 +27,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="services">
+    <section className="services animated-background">
         <h2>Services</h2>
         <div className="services-container">
         {services.map((service, index) => (

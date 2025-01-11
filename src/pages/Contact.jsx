@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import Inquire from '../components/Inquire';
+import ContactForm from '../components/ContactForm';
 import './Contact.css';
 
 export default function Contact() {
@@ -28,7 +28,7 @@ export default function Contact() {
                 </script>
             </Helmet>
             <h2>Contact Me</h2>
-            <Inquire/>
+            <ContactForm />
         </section>
     );
 }

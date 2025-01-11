@@ -6,9 +6,13 @@
     flex-direction: column;
     width: 100%;
     padding: 4rem 2rem;
-    background-color: var(--background-color);
+    background: linear-gradient(135deg, black, white);
     color: var(--primary-color);
     text-align: center;
+}
+
+.services h2 {
+    color: white;
 }
 
 .services-container {

@@ -43,27 +43,3 @@
   color: #555;
   line-height: 1.6;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .affiliations h2 {
-    font-size: 2rem;
-  }
-
-  .affiliation {
-    padding: 1.5rem;
-  }
-
-  .affiliation .icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .affiliation h3 {
-    font-size: 1.2rem;
-  }
-
-  .affiliation p {
-    font-size: 0.95rem;
-  }
-}

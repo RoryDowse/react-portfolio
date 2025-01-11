@@ -1,7 +1,7 @@
 /* Testimonials Section */
 .testimonials {
     padding: 5rem 2rem;
-    background: linear-gradient(135deg, #f0f0f0, #dfe8f0);
+    background: linear-gradient(-135deg, var(--muted-tertiary-color), var(--secondary-color), #dfe8f0);
     text-align: center;
 }
 
@@ -12,6 +12,10 @@
   gap: 3rem;
   justify-content: center;
   align-items: center;
+}
+
+.testimonials h2 {
+  color: white;
 }
 
 /* Individual Testimonial Card */

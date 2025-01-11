@@ -15,8 +15,7 @@
   animation: myAnim 0.75s ease 0s 1 normal forwards;
   background: linear-gradient(
     135deg,
-    var(--muted-tertiary-color) 0%,
-    var(--secondary-color) 50%,
+    var(--secondary-color) 0%,
     var(--primary-color) 100%
   );
 }

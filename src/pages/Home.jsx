@@ -18,7 +18,6 @@ export default function Home() {
             <Affiliations />
             <Testimonials />
             <Packages />
-            <h2>Inquire Now</h2>
             <Inquire />
             <Location />
             <FAQ />
