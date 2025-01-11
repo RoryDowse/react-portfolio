@@ -3,45 +3,45 @@ import './Affiliations.css';
 const affiliations = [
     {
       name: "Arizona State University",
-      icon: "path/to/asu-icon.svg",
-      link: "",
-      description: "Certification in Software Development.",
+      icon: "src/assets/asu-logo.webp",
+      link: "https://www.google.com",
+      description: "Certified Software Developer",
     },
     // {
     //   name: "WordPress",
     //   icon: "path/to/wordpress-icon.svg",
     //   link: "",
-    //   description: "Certified WordPress Developer.",
+    //   description: "Certified WordPress Developer",
     // },
     // {
     //   name: "Shopify",
     //   icon: "path/to/shopify-icon.svg",
     //   link: "",
-    //   description: "Shopify Partner and App Developer.",
+    //   description: "Shopify Partner and App Developer",
     // },
     // {
     //   name: "UX Design",
     //   icon: "path/to/hubspot-icon.svg",
     //   link: "",
-    //   description: "Certified UX Design Specialist.",
+    //   description: "Certified UX Design Specialist",
     // },
     // {
     //   name: "Google Analytics",
     //   icon: "path/to/google-icon.svg",
     //   link: "",
-    //   description: "Google Analytics Certified.",
+    //   description: "Google Analytics Certified",
     // },
     // {
     //   name: "WCAG",
     //   icon: "path/to/wcag-icon.svg",
     //   link: "",
-    //   description: "WCAG Level AA Certified.",
+    //   description: "WCAG Level AA Certified",
     // },
     {
       name: "HubSpot",
-      icon: "path/to/hubspot-icon.svg",
+      icon: "src/assets/hubspot-logo.webp",
       link: "",
-      description: "Certified SEO Specialist.",
+      description: "Certified SEO Specialist",
     },
     // {
     //   name: "Ahrefs",
@@ -58,8 +58,16 @@ const affiliations = [
         <div className="affiliations-container">
           {affiliations.map((affiliation, index) => (
             <div key={index} className="affiliation">
-              <img src={affiliation.icon} alt={affiliation.name} />
-              <h3>{affiliation.name}</h3>
+              <img src={affiliation.icon} alt={affiliation.name} className="icon" />
+              <h3>
+                {affiliation.link ? (
+                  <a href={affiliation.link} target="_blank" rel="noopener noreferrer">
+                    {affiliation.name}
+                  </a>
+                ) : (
+                  affiliation.name
+                )}
+              </h3>
               <p>{affiliation.description}</p>
             </div>
           ))}
@@ -67,3 +75,4 @@ const affiliations = [
       </section>
     );
   }
+  

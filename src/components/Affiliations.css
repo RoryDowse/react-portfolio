@@ -1,0 +1,69 @@
+/* Affiliations Section */
+.affiliations {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+/* Affiliations Container */
+.affiliations-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Icon Styling */
+.affiliation .icon {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.affiliation:hover .icon {
+  transform: scale(1.1);
+}
+
+/* Name Styling */
+.affiliation h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.affiliation a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Description Styling */
+.affiliation p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .affiliations h2 {
+    font-size: 2rem;
+  }
+
+  .affiliation {
+    padding: 1.5rem;
+  }
+
+  .affiliation .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .affiliation h3 {
+    font-size: 1.2rem;
+  }
+
+  .affiliation p {
+    font-size: 0.95rem;
+  }
+}
