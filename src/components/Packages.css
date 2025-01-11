@@ -1,163 +1,175 @@
 /* General Styles for the Packages Section */
 .packages {
-    padding: 4rem 2rem;
-    text-align: center;
-  }
+  padding: 4rem 2rem;
+  text-align: center;
+}
   
-  /* Package Container (Grid Layout) */
-  .packages-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-content: center;
-    align-items: start;
-  }
-  
-  /* Individual Package Styling */
-  .package {
-    background-color: var(--background-color);
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    transition: all 0.3s ease;
-    border: 1px solid #e1e1e1;
-  }
+/* Package Container (Grid Layout) */
+.packages-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+}
 
-  .package:nth-child(1) {
-    background-color: black;
-  }
+/* Individual Package Styling */
+.package {
+  background-color: var(--background-color);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid #e1e1e1;
+}
 
-  .package:nth-child(2) {
-    background-color: var(--primary-color);
-  }
+.package:nth-child(1) {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  z-index: 1;
+}
 
-  .package:nth-child(3) {
-    background-color: var(--secondary-color);
+.package:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, gold, transparent 60%);
+  animation: flowEffect 8s infinite;
+  z-index: -1; /* Place behind the package content */
+  opacity: 0.5;
+}
+
+/* Flow Animation */
+@keyframes flowEffect {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
   }
-  
-  .package:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px);
+  50% {
+    transform: translate(50%, 50%) scale(1.5);
   }
-  
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+
+.package:nth-child(2) {
+  background-color: var(--primary-color);
+}
+
+.package:nth-child(3) {
+  background-color: var(--secondary-color);
+}
+
+.package:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.package h3 {
+  font-size: 3rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.package:nth-child(1) h3 {
+  color: gold;
+}
+
+.package:nth-child(2) h3 {
+  color: silver;
+}
+
+.package:nth-child(3) h3 {
+  color: #cd7f32;
+}
+
+.package p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.package:nth-child(1) p {
+  color: white;
+}
+
+.package:nth-child(2) p {
+  color: white;
+}
+
+.package:nth-child(3) p {
+  color: white;
+}
+
+.package ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.package li {
+  color: var(--muted-tertiary-color);
+  margin-bottom: 0.5rem;
+}
+
+.package:nth-child(1) li {
+  color: white;
+}
+
+.package:nth-child(2) li {
+  color: white;
+}
+
+.package:nth-child(3) li {
+  color: white;
+}
+
+/* Call to Action (CTA) Styling */
+.package button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.package:nth-child(1) button {
+  background-color: gold;
+  color: black;
+}
+
+.package:nth-child(2) button {
+  background-color: silver;
+  color: black;
+}
+
+.package:nth-child(3) button {
+  background-color: #cd7f32;
+}
+
+.package button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .packages {
+    padding: 1.5rem;
+  }
   .package h3 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-weight: 700;
+    font-size: 2.5rem;
   }
-
-  .package:nth-child(1) h3 {
-    color: gold;
-  }
-
-  .package:nth-child(2) h3 {
-    color: silver;
-  }
-
-  .package:nth-child(3) h3 {
-    color: #cd7f32;
-  }
-  
-  .package p {
-    font-size: 1.1rem;
-    color: var(--secondary-color);
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-  }
-
-  .package:nth-child(1) p {
-    color: white;
-  }
-
-  .package:nth-child(2) p {
-    color: white;
-  }
-
-  .package:nth-child(3) p {
-    color: white;
-  }
-  
-  .package ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 1.5rem;
-  }
-  
-  .package li {
-    font-size: 1rem;
-    color: var(--muted-tertiary-color);
-    margin-bottom: 0.5rem;
-  }
-
-  .package:nth-child(1) li {
-    color: white;
-  }
-
-  .package:nth-child(2) li {
-    color: white;
-  }
-
-  .package:nth-child(3) li {
-    color: white;
-  }
-  
-  /* Call to Action (CTA) Styling */
-  .package button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-
-  .package:nth-child(1) button {
-    background-color: gold;
-    color: black;
-  }
-
-  .package:nth-child(2) button {
-    background-color: silver;
-    color: black;
-  }
-
-  .package:nth-child(3) button {
-    background-color: #cd7f32;
-  }
-  
-  .package button:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.05);
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .packages h2 {
-      font-size: 2.5rem;
-    }
-  
-    .package {
-      padding: 1.5rem;
-    }
-  
-    .package h3 {
-      font-size: 1.5rem;
-    }
-  
-    .package p {
-      font-size: 1rem;
-    }
-  
-    .package ul li {
-      font-size: 0.9rem;
-    }
-  
-    .package button {
-      font-size: 1rem;
-      padding: 0.8rem 1.5rem;
-    }
-  }
-  
+}

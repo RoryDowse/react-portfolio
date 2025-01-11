@@ -14,7 +14,7 @@
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    gap: 5rem;
     justify-content: center;
     justify-items: center;
 }
@@ -25,8 +25,9 @@
     color: var(--background-color);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 8px 18px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
+    background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
 .service:nth-child(odd) {
@@ -54,36 +55,39 @@
 }
 
 .service h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--background-color);
 }
 
 .service p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: var(--background-color);
 }
 
 /* Responsive Adjustments */
+@media (max-width: 480px) {
+    .service h3 {
+        font-size: 2.5rem;
+    }
+}
+
+
 @media (max-width: 768px) {
     .services {
-        padding: 2rem 1rem;
+        padding: 4rem;
     }
-
-    .services h2 {
-        font-size: 2rem;
-    }
-
-    .service {
-        padding: 1.5rem;
-    }
-
     .service h3 {
-        font-size: 1.25rem;
+        font-size: 2.5rem;
     }
+}
 
-    .service p {
-        font-size: 0.9rem;
+@media (max-width: 992px) {
+    .services {
+        padding: 4rem;
+    }
+    .service h3 {
+        font-size: 2.5rem;
     }
 }

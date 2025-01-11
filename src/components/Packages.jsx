@@ -41,13 +41,13 @@ const packages = [
           {packages.map((showPackage, index) => (
             <div key={index} className="package">
               <h3>{showPackage.name}</h3>
-              <p>{showPackage.description}</p>
+              <p className="description">{showPackage.description}</p>
               <ul>
                 {showPackage.features.map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <p>{showPackage.cta}</p>
+              <p className="cta-text">{showPackage.cta}</p>
               <button>Inquire Now</button>
             </div>
           ))}
