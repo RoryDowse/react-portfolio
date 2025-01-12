@@ -1,10 +1,11 @@
 
+import jamesWoodrow from '../assets/james-woodrow.webp';
 import './Testimonials.css';
 
 const testimonials = [
     {
       name: "James Woodrow",
-      photo: "../src/assets/james-woodrow.webp",
+      photo: jamesWoodrow,
       role: "Small Business Owner",
       company: "James Woodrow Violin",
       feedback: "Rory delivered the finished website well ahead of schedule and most importantly I am very pleased with the end result. I am delighted to recommend Rory's expertise.",
