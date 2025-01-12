@@ -91,7 +91,7 @@
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     white-space: normal;
     border-right: none;
     width: auto;
@@ -110,20 +110,19 @@
   }
 
   .hero-subtitle {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 300;
     animation: fade-in 1.2s ease-in forwards;
   }
 
   .hero-tagline {
     animation: fade-in 1.3s ease-in forwards;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 
   .hero-text {
     animation: fade-in 1.4s ease-in forwards;
-    color: black;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .btn {
