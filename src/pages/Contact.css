@@ -46,15 +46,6 @@
   resize: vertical;
 }
 
-/* Styles for submit button, including background color and transition */
-.contact-form button {
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
 /* Styles for form errors */
 .form-errors p {
   color: var(--background-color) !important;

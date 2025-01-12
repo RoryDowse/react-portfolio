@@ -36,8 +36,7 @@
 }
 
 .cta button:hover {
-  background-color: var(--muted-tertiary-color);
-  color: #ecf0f1;
+  background-color: #f7f4a8;
   transform: translateY(-2px);
 }
 
