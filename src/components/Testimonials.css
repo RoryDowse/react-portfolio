@@ -1,21 +1,17 @@
 /* Testimonials Section */
 .testimonials {
-    padding: 5rem 2rem;
-    background: linear-gradient(-135deg, var(--muted-tertiary-color), var(--secondary-color), #dfe8f0);
-    text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(-135deg, var(--muted-tertiary-color), var(--secondary-color), #dfe8f0);
+  text-align: center;
 }
 
-/* Testimonials Container */
+/* Testimonials Container - Using Flexbox */
 .testimonials-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 3rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.testimonials h2 {
-  color: white;
+  display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap to the next line */
+  gap: 3rem; /* Space between the cards */
+  justify-content: center; /* Center the cards */
+  align-items: center; /* Align items vertically */
 }
 
 /* Individual Testimonial Card */
@@ -29,6 +25,9 @@
   transition: all 0.3s ease;
   transform: perspective(800px) rotateY(5deg);
   z-index: 1;
+  flex: 1 1 300px; /* Allow the card to grow/shrink but with a minimum width of 300px */
+  max-width: 350px; /* Set the max width */
+  box-sizing: border-box; /* Ensure padding doesn't increase the width */
 }
 
 .testimonial:hover {
@@ -104,7 +103,6 @@
   }
 }
 
-/* Adding animation to each testimonial */
 .testimonial:nth-child(odd) {
   animation: slideInUp 1s ease-out;
 }
@@ -132,4 +130,3 @@
     right: 30px;
   }
 }
-  

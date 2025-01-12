@@ -1,10 +1,11 @@
 
+import jamesWoodrow from '../assets/james-woodrow.webp';
 import './Testimonials.css';
 
 const testimonials = [
     {
       name: "James Woodrow",
-      photo: "./src/assets/james-woodrow.webp",
+      photo: jamesWoodrow,
       role: "Small Business Owner",
       company: "James Woodrow Violin",
       feedback: "Rory delivered the finished website well ahead of schedule and most importantly I am very pleased with the end result. I am delighted to recommend Rory's expertise.",
@@ -36,7 +37,7 @@ const testimonials = [
               <h3>{testimonial.name}</h3>
               <p className="role">{testimonial.role}</p>
               <p className="company">{testimonial.company}</p>
-              <p className="text-muted">
+              <p className="feedback">
               <span className="opening-quote">&#8220;</span>
                 {testimonial.feedback}</p>
                 <br />
