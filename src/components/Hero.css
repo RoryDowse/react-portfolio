@@ -127,6 +127,6 @@
 
   .btn {
     animation: fade-in 1.5s ease-in forwards;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
