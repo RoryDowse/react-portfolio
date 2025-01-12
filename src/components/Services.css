@@ -17,7 +17,7 @@
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
     gap: 5rem;
     justify-content: center;
     justify-items: center;
@@ -80,7 +80,7 @@
 
 @media (max-width: 768px) {
     .services {
-        padding: 4rem;
+        padding: 2rem;
     }
     .service h3 {
         font-size: 2.5rem;
