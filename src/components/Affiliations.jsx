@@ -3,7 +3,7 @@ import './Affiliations.css';
 const affiliations = [
     {
       name: "Arizona State University",
-      icon: "src/assets/asu-logo.webp",
+      icon: "../src/assets/asu-logo.webp",
       link: "https://www.google.com",
       description: "Certified Software Developer",
     },
@@ -39,7 +39,7 @@ const affiliations = [
     // },
     {
       name: "HubSpot",
-      icon: "src/assets/hubspot-logo.webp",
+      icon: "../src/assets/hubspot-logo.webp",
       link: "",
       description: "Certified SEO Specialist",
     },
