@@ -20,7 +20,7 @@ const services = [
     { title: 'Search Engine Optimization (SEO)', description: 'Optimizing your site to rank on top on Google.' },
     { title: 'eCommerce Business', description: 'Building robust online stores to drive sales and grow your business.' },
     { title: 'Website Accessibility', description: 'Ensuring your site can be used by people with disabilities and meets WCAG standards.' },
-    { title: 'Web Applications', description: 'Tailored software solutions that solve unique challenges.' },
+    { title: 'Web Applications', description: 'Tailored software solutions that solve unique challenges for you and your business.' },
     { title: 'AI Integration', description: 'Integrating cutting-edge AI capabilities into your website.' },
     { title: 'Web Maintenance', description: 'Keeping your website up to date and optimizing its performance for optimal user experience.' },
 ];
