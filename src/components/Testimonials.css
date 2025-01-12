@@ -30,7 +30,7 @@
   transition: all 0.3s ease;
   transform: perspective(800px) rotateY(5deg);
   z-index: 1;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .testimonial:hover {
