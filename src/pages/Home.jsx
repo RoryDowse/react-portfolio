@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Employer from "../components/Employer";
@@ -10,8 +12,39 @@ import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
 
 export default function Home() {
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rory Dowse Web Development",
+        "image": "https://rorydowsedev.com/assets/rory-dowse-headshot.webp",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Deer Valley, Phoenix, AZ",
+            "addressLocality": "Phoenix",
+            "addressRegion": "AZ",
+            "postalCode": "85027",
+            "addressCountry": "US"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "keywords": "web development, SEO, website design",
+        "description": "Website design and SEO services tailored to your business needs.",
+        "telephone": "+1-480-336-0379",
+        "url": "https://rorydowsedev.com/",
+        "priceRange": "$$",
+        "sameAs": [
+            "https://www.linkedin.com/in/rorydowse/",
+            "https://github.com/rorydowse"
+        ]
+    };
+
     return (
         <>
+            <Helmet>
+                <title>Rory Dowse Web Development</title>
+                <link rel="canonical" href="https://rorydowsedev.com/" />
+                <meta name="description" content="Rory Dowse Web Development provides website design and SEO services to help businesses and individuals achieve their online goals." />
+                <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+            </Helmet>
             <Hero />
             <Services />
             <Employer />

@@ -6,7 +6,7 @@ export default function AboutMe() {
         <section className="about-me">
             <Helmet>
                 <title>About Me | Rory Dowse Dev</title>
-                <link rel="canonical" href="https://rorydowsedev.com" />
+                <link rel="canonical" href="https://rorydowsedev.com/about-me" />
                 <meta name="description" content="Learn more about Rory Dowse, a forward-thinking Software Engineer specializing in the MERN stack. Contact Rory today!" />
                 <script type="application/ld+json">
                     {`
