@@ -8,7 +8,7 @@
 /* Testimonials Container */
 .testimonials-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 0.9fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
   gap: 3rem;
   justify-content: center;
   align-items: center;
@@ -47,15 +47,15 @@
 
 /* Name & Role */
 .testimonial h3 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: var(--primary-color);
   font-weight: 700;
   margin-top: 50px;
 }
 
 .role {
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: var(--primary-color);
@@ -63,15 +63,14 @@
 }
 
 .company {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--primary-color);
+  font-size: 1.1rem;
+  color: var(--secondary-color);
   line-height: 1.8;
 }
 
 /* Feedback Styling */
-.feedback {
-  font-size: 1.2rem;
+.testimonial p:last-child {
+  font-size: 1.1rem;
   color: black;
   margin-top: 1rem;
 }
