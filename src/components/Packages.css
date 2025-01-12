@@ -88,7 +88,7 @@
 }
 
 .package:nth-child(3) h3 {
-  color: #cd7f32;
+  color: #e48d36;
 }
 
 .package p {
@@ -157,7 +157,8 @@
 }
 
 .package:nth-child(3) button {
-  background-color: #cd7f32;
+  background-color: #e48d36;
+  color: black;
 }
 
 .package button:hover {
