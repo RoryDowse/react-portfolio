@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.testimonials h2 {
+  color: white;
+}
+
 /* Testimonials Container - Using Flexbox */
 .testimonials-container {
   display: flex;
@@ -46,24 +50,25 @@
 
 /* Name & Role */
 .testimonial h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--primary-color);
   font-weight: 700;
   margin-top: 50px;
 }
 
 .role {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   line-height: 1.8;
 }
 
 .company {
-  font-size: 1.1rem;
-  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-color);
   line-height: 1.8;
 }
 
