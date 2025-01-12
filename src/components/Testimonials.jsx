@@ -1,11 +1,10 @@
 
-import jamesWoodrow from '../assets/james-woodrow.webp';
 import './Testimonials.css';
 
 const testimonials = [
     {
       name: "James Woodrow",
-      photo: jamesWoodrow,
+      photo: "./src/assets/james-woodrow.webp",
       role: "Small Business Owner",
       company: "James Woodrow Violin",
       feedback: "Rory delivered the finished website well ahead of schedule and most importantly I am very pleased with the end result. I am delighted to recommend Rory's expertise.",
@@ -24,27 +23,6 @@ const testimonials = [
     //   company: "American Express",
     //   feedback: "Rory's expertise in custom applications helped us launch a unique platform that our users love.",
     // },
-    {
-      name: "John Doe",
-      photo: "path/to/michael-tomcal-photo.webp",
-      role: "Senior Engineer",
-      company: "A Company",
-      feedback: "Feedback from John Doe",
-    },
-    {
-      name: "John Doe",
-      photo: "path/to/michael-tomcal-photo.webp",
-      role: "Senior Engineer",
-      company: "A Company",
-      feedback: "Feedback from John Doe",
-    },
-    {
-      name: "John Doe",
-      photo: "path/to/michael-tomcal-photo.webp",
-      role: "Senior Engineer",
-      company: "A Company",
-      feedback: "Feedback from John Doe",
-    },
   ];
   
   export default function Testimonials() {
@@ -58,7 +36,7 @@ const testimonials = [
               <h3>{testimonial.name}</h3>
               <p className="role">{testimonial.role}</p>
               <p className="company">{testimonial.company}</p>
-              <p className="feedback">
+              <p className="text-muted">
               <span className="opening-quote">&#8220;</span>
                 {testimonial.feedback}</p>
                 <br />
