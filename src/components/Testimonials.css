@@ -12,6 +12,7 @@
   gap: 3rem;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
 
 .testimonials h2 {
@@ -29,6 +30,7 @@
   transition: all 0.3s ease;
   transform: perspective(800px) rotateY(5deg);
   z-index: 1;
+  max-width: 100%;
 }
 
 .testimonial:hover {

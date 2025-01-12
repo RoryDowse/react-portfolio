@@ -16,6 +16,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     animation: myAnim 0.75s ease 0s 1 normal forwards;
+    max-width: 100%;
 }
 
 /* Media Query for Medium Screens (Tablets) */
