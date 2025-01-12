@@ -49,7 +49,7 @@ export default function Home() {
             {/* <Services /> */}
             <Employer />
             <Affiliations />
-            {/* <Testimonials /> */}
+            <Testimonials />
             <Packages />
             <Inquire />
             <Location />

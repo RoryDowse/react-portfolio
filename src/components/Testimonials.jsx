@@ -24,6 +24,27 @@ const testimonials = [
     //   company: "American Express",
     //   feedback: "Rory's expertise in custom applications helped us launch a unique platform that our users love.",
     // },
+    {
+      name: "John Doe",
+      photo: "path/to/michael-tomcal-photo.webp",
+      role: "Senior Engineer",
+      company: "A Company",
+      feedback: "Feedback from John Doe",
+    },
+    {
+      name: "John Doe",
+      photo: "path/to/michael-tomcal-photo.webp",
+      role: "Senior Engineer",
+      company: "A Company",
+      feedback: "Feedback from John Doe",
+    },
+    {
+      name: "John Doe",
+      photo: "path/to/michael-tomcal-photo.webp",
+      role: "Senior Engineer",
+      company: "A Company",
+      feedback: "Feedback from John Doe",
+    },
   ];
   
   export default function Testimonials() {
