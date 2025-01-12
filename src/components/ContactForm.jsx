@@ -156,7 +156,7 @@ export default function ContactForm() {
                 </div>
 
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary" aria-label="Submit contact form">Submit</button>
+                    <button type="submit" className="btn btn-primary btn-lg" aria-label="Submit contact form">Submit</button>
                 </div>
 
                 {/* Display validation errors */}

@@ -50,6 +50,7 @@ const packages = [
               <p className="cta-text">{showPackage.cta}</p>
               <button
                 onClick={() => document.getElementById('inquire-now').scrollIntoView({ behavior: 'smooth' })}
+                aria-label="Inquire Now"
               >
                 Inquire Now
               </button>

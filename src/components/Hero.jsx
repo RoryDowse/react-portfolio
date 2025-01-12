@@ -17,6 +17,7 @@ export default function Hero() {
                 <p className="hero-text">Request your initial consultation today:</p>
                 <button
                     className="btn btn-primary btn-lg"
+                    aria-label="Inquire Now"
                     onClick={() => document.getElementById('inquire-now').scrollIntoView({ behavior: 'smooth' })}
                 >
                     Inquire Now
