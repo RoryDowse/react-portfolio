@@ -1,9 +1,11 @@
+import asuLogo from '../assets/asu-logo.webp';
+import hubspotLogo from '../assets/hubspot-logo.webp';
 import './Affiliations.css';
 
 const affiliations = [
     {
       name: "Arizona State University",
-      icon: "../src/assets/asu-logo.webp",
+      icon: asuLogo,
       link: "https://www.google.com",
       description: "Certified Software Developer",
     },
@@ -39,7 +41,7 @@ const affiliations = [
     // },
     {
       name: "HubSpot",
-      icon: "../src/assets/hubspot-logo.webp",
+      icon: hubspotLogo,
       link: "",
       description: "Certified SEO Specialist",
     },
