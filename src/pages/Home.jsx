@@ -46,10 +46,10 @@ export default function Home() {
                 <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
             </Helmet>
             <Hero />
-            <Services />
+            {/* <Services /> */}
             <Employer />
             <Affiliations />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Packages />
             <Inquire />
             <Location />

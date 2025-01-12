@@ -12,7 +12,6 @@
   gap: 3rem;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
 }
 
 .testimonials h2 {
@@ -30,7 +29,6 @@
   transition: all 0.3s ease;
   transform: perspective(800px) rotateY(5deg);
   z-index: 1;
-  /* max-width: 100%; */
 }
 
 .testimonial:hover {
@@ -49,31 +47,30 @@
 
 /* Name & Role */
 .testimonial h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--primary-color);
   font-weight: 700;
   margin-top: 50px;
 }
 
 .role {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   line-height: 1.8;
 }
 
 .company {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--primary-color);
+  font-size: 1.1rem;
+  color: var(--secondary-color);
   line-height: 1.8;
 }
 
 /* Feedback Styling */
-.feedback {
-  font-size: 1.2rem;
+.testimonial p:last-child {
+  font-size: 1.1rem;
   color: black;
   margin-top: 1rem;
 }
@@ -128,10 +125,6 @@
 
   .testimonial img {
     top: -40px;
-  }
-
-  .opening-quote {
-    left: 30px;
   }
 
   .closing-quote {
