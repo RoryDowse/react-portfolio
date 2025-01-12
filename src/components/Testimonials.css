@@ -127,6 +127,10 @@
     top: -40px;
   }
 
+  .opening-quote {
+    left: 30px;
+  }
+
   .closing-quote {
     bottom: 0;
     right: 30px;

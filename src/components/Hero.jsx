@@ -17,7 +17,7 @@ export default function Hero() {
                 <p className="hero-text">Request your initial consultation today:</p>
                 <button
                     className="btn btn-primary btn-lg"
-                    onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}
+                    onClick={() => document.getElementById('inquire-now').scrollIntoView({ behavior: 'smooth' })}
                 >
                     Inquire Now
                 </button>

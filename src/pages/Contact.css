@@ -1,7 +1,6 @@
 /* Styles for the contact section, including padding and background color */
 .contact-section {
-  background-color: var(--background-color);
-  padding: 0 0 4rem 0;
+  padding: 2rem;
 }
 
 /* Styles for the contact form container */

@@ -65,7 +65,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="contact-section">
+        <section className="contact">
             <form 
                 onSubmit={handleSubmit} 
                 className="contact-form" 

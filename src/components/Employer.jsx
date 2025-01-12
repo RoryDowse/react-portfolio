@@ -8,7 +8,7 @@ export default function ProspectiveEmployer() {
       <p className="lead mb-4 text-white">
         If you&apos;re looking for a dedicated and experienced developer to join your team, I would love to connect!
       </p>
-      <Link to="/resume" className="btn btn-secondary mt-3">View My Resume</Link>
+      <Link to="/resume" className="btn btn-secondary mt-3" target="_blank" rel="noopener noreferrer">View My Resume</Link>
     </section>
   );
 }

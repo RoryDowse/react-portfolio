@@ -48,7 +48,11 @@ const packages = [
                 ))}
               </ul>
               <p className="cta-text">{showPackage.cta}</p>
-              <button>Inquire Now</button>
+              <button
+                onClick={() => document.getElementById('inquire-now').scrollIntoView({ behavior: 'smooth' })}
+              >
+                Inquire Now
+              </button>
             </div>
           ))}
         </div>
