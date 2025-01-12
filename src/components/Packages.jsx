@@ -23,7 +23,7 @@ const packages = [
     },
     {
       name: "Starter",
-      description: "Perfect for small businesses and personal projects.",
+      description: "Perfect for small businesses, landing pages, and personal profiles.",
       features: [
         "Custom 3-page website",
         "Responsive design",

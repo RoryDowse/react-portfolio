@@ -60,6 +60,10 @@
   margin-bottom: 3rem;
 }
 
+.hero-text {
+  font-size: 1.25rem;
+}
+
 /* Call-to-Action Button */
 .btn {
   padding: 1rem 2rem;
@@ -106,17 +110,19 @@
   }
 
   .hero-subtitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
     animation: fade-in 1.2s ease-in forwards;
   }
 
   .hero-tagline {
     animation: fade-in 1.3s ease-in forwards;
+    font-size: 1.5rem;
   }
 
   .hero-text {
     animation: fade-in 1.4s ease-in forwards;
+    font-size: 1.3rem;
   }
 
   .btn {

@@ -59,7 +59,7 @@
 }
 
 .service h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--background-color);
 }
@@ -71,27 +71,14 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 480px) {
-    .service h3 {
-        font-size: 2.5rem;
-    }
-}
-
-
 @media (max-width: 768px) {
     .services {
         padding: 2rem;
-    }
-    .service h3 {
-        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 992px) {
     .services {
         padding: 4rem;
-    }
-    .service h3 {
-        font-size: 2.5rem;
     }
 }
