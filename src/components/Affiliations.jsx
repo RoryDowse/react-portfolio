@@ -6,7 +6,7 @@ const affiliations = [
     {
       name: "Arizona State University",
       icon: asuLogo,
-      link: "https://www.google.com",
+      link: "",
       description: "Certified Software Developer",
     },
     // {

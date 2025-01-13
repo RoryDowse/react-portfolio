@@ -35,7 +35,7 @@
 
 .hero-title {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 3rem;
   color: var(--background-color);
   overflow: hidden; /* Ensures text does not overflow while animating */
@@ -111,12 +111,13 @@
 
   .hero-subtitle {
     font-size: 2.3rem;
-    font-weight: 300;
+    font-weight: 400;
     animation: fade-in 1.2s ease-in forwards;
   }
 
   .hero-tagline {
     animation: fade-in 1.3s ease-in forwards;
+    font-weight: 500;
     font-size: 1.7rem;
   }
 

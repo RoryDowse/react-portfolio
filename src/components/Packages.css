@@ -74,7 +74,7 @@
 
 .package h3 {
   font-size: 3rem;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0,0.8);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
   color: var(--primary-color);
   margin-bottom: 2rem;
   font-weight: 700;
