@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './VideoCard.css';
+import './css/VideoCard.css';
 
 const VideoCard = ({ title, description, youtubeId }) => {
     const [isPlaying, setIsPlaying] = useState(false);

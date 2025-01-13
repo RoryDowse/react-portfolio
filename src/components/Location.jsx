@@ -1,4 +1,4 @@
-import './Location.css';
+import './css/Location.css';
 
 export default function Location() {
   const address = "Deer Valley, Phoenix, AZ 85027";

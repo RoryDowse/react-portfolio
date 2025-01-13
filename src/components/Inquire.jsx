@@ -1,5 +1,5 @@
 import ContactForm from "./ContactForm"
-import './Inquire.css'
+import './css/Inquire.css'
 export default function Inquire() {
     return (
         <section className="inquire-section" id="inquire-now">

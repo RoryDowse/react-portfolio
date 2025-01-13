@@ -1,4 +1,4 @@
-import './FAQ.css';
+import './css/FAQ.css';
 export default function FAQ() {
     return (
         <section className="faq">

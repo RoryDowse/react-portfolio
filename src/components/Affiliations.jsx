@@ -1,6 +1,6 @@
 import asuLogo from '../assets/asu-logo.webp';
 import hubspotLogo from '../assets/hubspot-logo.webp';
-import './Affiliations.css';
+import './css/Affiliations.css';
 
 const affiliations = [
     {

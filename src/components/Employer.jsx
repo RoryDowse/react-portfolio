@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Employer.css';
+import './css/Employer.css';
 
 export default function ProspectiveEmployer() {
   return (

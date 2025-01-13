@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPaintBrush, FaLaptopCode, FaShoppingCart, FaTools, FaSearch, FaUniversalAccess, FaRobot, FaWrench } from 'react-icons/fa';
-import './Services.css';
+import './css/Services.css';
 
 const iconMap = {
     'Website Design': <FaPaintBrush />,

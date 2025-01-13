@@ -1,4 +1,4 @@
-import './Packages.css';
+import './css/Packages.css';
 
 const packages = [
     {

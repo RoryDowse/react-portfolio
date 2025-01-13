@@ -1,6 +1,6 @@
 
 import jamesWoodrow from '../assets/james-woodrow.webp';
-import './Testimonials.css';
+import './css/Testimonials.css';
 
 const testimonials = [
     {

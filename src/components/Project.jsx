@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import './Project.css';
+import './css/Project.css';
 
 export default function Project({ image, title, deployedLink, githubLink }) {
     return (
