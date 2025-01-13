@@ -33,19 +33,11 @@ export default function Services() {
         {services.map((service, index) => (
             <div key={index} className="service">
             <div className="icon">{iconMap[service.title]}</div>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
             </div>
         ))}
         </div>
-        <button
-            className="btn btn-primary btn-lg"
-            aria-label="Inquire Now"
-            style={{ marginTop: '80px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.5)' }}
-            onClick={() => document.getElementById('inquire-now').scrollIntoView({ behavior: 'smooth' })}
-        >
-            Inquire Now
-        </button>
     </section>
     );
 }

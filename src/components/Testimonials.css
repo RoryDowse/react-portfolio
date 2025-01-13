@@ -1,8 +1,30 @@
 /* Testimonials Section */
 .testimonials {
-    padding: 5rem 2rem;
-    background: linear-gradient(-135deg, var(--muted-tertiary-color), var(--secondary-color), #dfe8f0);
-    text-align: center;
+  position: relative;
+  padding: 5rem 2rem;
+  background: linear-gradient(-135deg, var(--muted-tertiary-color), var(--secondary-color), #dfe8f0);
+  text-align: center;
+}
+
+/* Custom Shape Divider */
+.custom-shape-divider-top-1736745264 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1736745264 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-top-1736745264 .shape-fill {
+  fill: var(--background-color);
 }
 
 /* Testimonials Container */
@@ -91,6 +113,28 @@
   bottom: 10px;
   right: 60px;
   transform: rotate(-30deg);
+}
+
+/* Custom Shape Divider */
+.custom-shape-divider-bottom-1736745379 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1736745379 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-bottom-1736745379 .shape-fill {
+  fill: var(--background-color);
 }
 
 /* Animation for the testimonials */

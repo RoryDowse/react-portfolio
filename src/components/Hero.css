@@ -1,5 +1,6 @@
 /* Hero Section */
 .hero {
+  position: relative;
   height: 100vh;
   background: linear-gradient(to bottom right, var(--primary-color), var(--accent-color));
   color: var(--background-color);
