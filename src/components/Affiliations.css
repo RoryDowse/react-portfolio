@@ -1,8 +1,10 @@
 /* Affiliations Section */
 .affiliations {
+  position: relative;
   padding: 5rem 2rem;
   text-align: center;
 }
+
 /* Affiliations Container */
 .affiliations-container {
   display: grid;
