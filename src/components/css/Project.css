@@ -7,8 +7,9 @@
 /* Styles for the project image, ensuring it fills the container width while maintaining aspect ratio */
 .project-image img {
   width: 100%;
-  height: auto;
+  max-height: 279px;
   display: block;
+  object-fit: cover;
 }
 
 /* Overlay that appears over the project image on hover, initially hidden with opacity */
