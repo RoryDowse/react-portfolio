@@ -7,13 +7,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './index.css';
 import './App.css';
 
-import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals';
-getCLS(console.log); // Logs Cumulative Layout Shift (CLS)
-getFID(console.log); // Logs First Input Delay (FID)
-getFCP(console.log); // Logs First Contentful Paint (FCP)
-getLCP(console.log); // Logs Largest Contentful Paint (LCP)
-getTTFB(console.log); // Logs Time to First Byte (TTFB)
-
 // Bringing in the pages the router will use to conditionally show the appropriate views
 import App from './App';
 import Home from './pages/Home';
