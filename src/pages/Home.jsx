@@ -40,7 +40,7 @@ export default function Home() {
     return (
         <>
             <Helmet>
-                <title>Rory Dowse Web Development</title>
+                <title>Website Design and SEO Services in Deer Valley, Phoenix, AZ</title>
                 <link rel="canonical" href="https://rorydowsedev.com/" />
                 <meta name="description" content="Rory Dowse Web Development provides website design and SEO services to help businesses and individuals achieve their online goals." />
                 <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
