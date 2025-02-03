@@ -9,8 +9,10 @@ export default function Proficiencies() {
                         <li>CSS</li>
                         <li>AJAX</li>
                         <li>HTML</li>
+                        <li>Next.js</li>
                         <li>jQuery</li>
                         <li>React.js</li>
+                        <li>Tailwind</li>
                         <li>Bootstrap</li>
                         <li>JavaScript</li>
                         <li>TypeScript</li>
