@@ -6,16 +6,16 @@ const Videos = () => {
     const videoData = [
         {
             id: 'video1',
+            title: 'Financial Landing Page | Next.js and Tailwind',
+            description: 'A Next.js-powered landing page designed for optimized performance and conversions, featuring a sleek and user-friendly interface for financial services.',
+            youtubeId: 'g7y1Au_3PfQ',
+        },
+        {
+            id: 'video2',
             title: 'Dictionary Database App | React and MongoDB',
             description: 'A React-powered dictionary app that lets users search words, view meanings, and explore words by starting letter or full list.',
             youtubeId: 'Axu38Iqbnp4',
         },
-        // {
-        //     id: 'video2',
-        //     title: 'Video 2',
-        //     description: 'Description for Video 2',
-        //     youtubeId: '',
-        // },
         // {
         //     id: 'video3',
         //     title: 'Video 3',
